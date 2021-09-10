@@ -1,0 +1,31 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+h1 {
+    text-align: center;
+}
+p{
+    font-size: 1.8em;
+    text-align: justify;
+}
+.texto-identado {
+    text-indent: 2em;
+}
+.letra-especial{
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 0.95em;
+}
+blockquote {
+    font-size: 3em;
+    font-style: italic;
+    text-align: right;
+    box-shadow: 8px 8px 12px lightslategrey;
+    margin: 2em 0 0 18em;
+    border-radius: 1%;
+    padding: 15px;
+    background-color: rgb(83, 108, 133);
+    color: rgb(255, 255, 255);
+}

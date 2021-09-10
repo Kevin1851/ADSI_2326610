@@ -1,0 +1,23 @@
+
+* {
+    margin: 0;
+    padding:0;
+}
+p{
+    font-size:1.5em;
+}
+.color-azul{
+    color:blue;
+}
+.color-verde{
+    color:rgb(0,255,0);
+}
+.color-gris{
+    color:#eeeb2964;
+}
+.color-redbull{
+    color:rgb(255, 0, 0)
+}
+.color-1001fonts{
+    color:rgb(142,21,30);
+}

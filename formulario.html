@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario.</title>
+    <link rel="stylesheet" href="css/formulario.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/submenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul class="menu">
+          <li class="submenu"><a href="index.html">Inicio</a></li>
+          <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
+          <li class="submenu"><a href="listas.html">Listas</a></li>
+          <li class="submenu"><a href="colores.html">Colores</a></li>
+          <li class="submenu"><a href="alineacion.html">Alineacion</a></li>
+          <li class="submenu"><a href="espacing.html">Espacing</a></li>
+          <li class="submenu"><a href="indent-blockquote.html">Indent y Blockquote</a></li>
+          <li class="submenu"><a href="margin-border-pading.html">Margins, Borders, Padding</a></li>
+          <li class="submenu"><a href="imagenes.html">Imagenes</a></li>
+          <li class="submenu"><a href="tablas.html">Tablas</a></li>
+          <li class="submenu"><a href="formulario.html">Formulario</a></li>
+          <li class="submenu"><a href="contenedores.html">Contenedores</a></li>  
+          <li class="submenu"><a href="#">Submenu</a>
+            <ul class="submenu-nivel2">
+                <li class="subitems"><a href=#>Noticias</a></li>
+                <li class="subitems"><a href=#>Avatars</a></li>
+                <li class="subitems"><a href=#>Consolas</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+    <div class="contenido-principal">
+        <h1>Citas medicas</h1>
+        <form>
+            <fieldset>
+                <div class="formulario">
+                    <div class="contenedor-controls-1">
+                        <input class="controls" type="text" name="nombres" placeholder="Ingrese su nombre">
+                    </div>
+                    <div class="contenedor-controls-2">
+                        <input class="controls" type="text" name="apellidos" placeholder="Ingrese su apellido"><br>
+                    </div>
+                    <textarea class="controls-check-observaciones" name="observaciones" cols="40" rows="5" maxlength="200" placeholder="Observaciones (Máximo 200 caracteres)"></textarea><br>
+                    <div class="contenedor-dias-ips">
+                        <div class="contenedor-interior">
+                            <label>Dias disponibles</label><br><br>
+                            <label><input class="controls-check" type="checkbox" value="Lunes">Lunes</label><br>
+                            <label><input class="controls-check" type="checkbox" value="Martes">Martes</label><br>
+                            <label><input class="controls-check" type="checkbox" value="Miercoles">Miercoles</label><br>
+                            <label><input class="controls-check" type="checkbox" value="Jueves">Jueves</label><br>
+                            <label><input class="controls-check" type="checkbox" value="Viernes">Viernes</label><br><br>
+                        </div>
+                        <div class="contenedor-interior-2">
+                            <label>IPS de atencion</label><br><br>
+                            <label><input class="controls-check" type="radio" name="IPS">IPS Centro</label><br>
+                            <label><input class="controls-check" type="radio" name="IPS">IPS Sur</label><br>
+                            <label><input class="controls-check" type="radio" name="IPS">IPS Norte</label><br>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="xd">Seleccione un medico</label><br><br>
+                          <select class="controls-final" name="medico">
+                              <option value="kevin-murcia">Kevin Murcia</option>
+                              <option value="camilo-rojas">Camilo Rojas</option>
+                              <option value="aslhey-jaramillo">Aslhey Jaramillo</option>
+                          </select><br>
+                    </div>
+                    <input class="controls-button" type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>

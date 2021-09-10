@@ -1,0 +1,17 @@
+h1 {
+  text-align:center;
+}
+.menu-principal{
+  position: fixed;
+  height: 100%;
+  top:0;
+  background-color:rgb(1, 139, 211) ;
+  width: 340px;
+  overflow: auto;
+}
+.fa-building, .fa-phone-square-alt {
+  margin-right:16px ;
+}
+.fa-blogger-b {
+  margin-right: 17px;
+}

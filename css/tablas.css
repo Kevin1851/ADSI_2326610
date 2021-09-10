@@ -1,0 +1,56 @@
+body {
+    font-family: 'Georama', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+}
+.tabla {
+    margin: 0 auto;
+    width: 65%;
+    height: 65%;
+    background: white;
+    border-radius: .5%;
+    box-shadow: 8px 8px 12px black;
+}
+table {
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+td {
+    border: 3px solid #ffffffc5;
+    padding: 15px;
+    color: rgba(0, 0, 0, 0.699);
+}
+.casilla-vacia {
+    border: 0;
+    background: none;
+}
+.titulo-caracteristica {
+    background-color: #365b77;
+    font-size: 1.2em;
+    color: #f1f1f2eb;
+    border-radius: 2%;
+    border: none;
+    border-bottom: 2px solid #365b77;
+    border-right: 2px solid #365b77;
+}
+th {
+    background: rgb(255, 255, 255);
+    width: 250px;
+}
+.titulo-horizontal {
+    font-weight: 900;
+    font-size: 1.2em;
+    background: none;
+    color: rgba(0, 0, 0, 0.699);
+}
+.contenido {
+    background: rgb(235, 235,235);
+}

@@ -1,0 +1,24 @@
+.submenu-nivel2 {
+    list-style: none;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    background: #17465a;
+    display: none;
+    max-height: 0;
+}
+.submenu:hover .submenu-nivel2 {
+    display: block;
+    min-width: 220px;
+    margin-top: 12%;
+}
+.subitems {
+    background: #17465a;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    padding: 15px;
+    margin-left: -6.5%;
+}
+.subitems:hover {
+    background-color: #10313d;
+    transition: all .3s;
+}

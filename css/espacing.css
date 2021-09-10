@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding:0;
+}
+h1 {
+    text-align: center;
+}
+p { 
+    font-size: 1.5em;
+    text-align: justify;
+}
+.espacio-letras {
+    letter-spacing: 0.3em;
+}
+.espacio-palabras {
+    word-spacing: 1em;
+}
+.espacio-lineas  {
+    line-height: 1.6em;
+}

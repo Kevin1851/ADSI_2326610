@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #23424d;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto', italic;
+    margin-top: 10px;
+}
+.main-box {
+    display: block;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(60, 180, 106);
+    box-shadow: 10px 10px 15px rgb(54, 165, 97);
+    margin: 15px auto;
+    border-radius: 8%;
+}
+.box-1 {
+    margin: 5px auto;
+    width: 210px;
+    height: 205px;
+}
+.main-box-2 {
+    display: block;
+    width: 565px;
+    margin: 0 auto;
+}
+.main-box-3 {
+    display: block;
+    width: 855px;
+    margin: 15px auto;
+}
+.box-1-2, .box-2-2 {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 8%;
+}
+.box-1-2 {
+    background-color: rgb(240, 240, 202);
+    box-shadow: 10px 10px 15px rgb(194, 194, 127);
+}
+.box-2-2 {
+    background-color: rgb(233, 215, 114);
+    box-shadow: 10px 10px 15px rgb(204, 184, 74);
+}
+.box-1-3, .box-2-3, .box-3-3 {
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 8%;
+}
+.box-1-3{
+    background-color: rgb(119, 219, 233);
+    box-shadow: 10px 10px 15px rgb(79, 204, 221);
+}
+.box-2-3 {
+    background-color: lightslategrey;
+    box-shadow: 10px 10px 15px rgb(83, 108, 133);
+}
+.box-3-3 {
+    background-color: rgb(231, 85, 85);
+    box-shadow: 10px 10px 15px rgb(209, 52, 52);
+}

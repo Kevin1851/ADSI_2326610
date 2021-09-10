@@ -1,0 +1,100 @@
+body {
+    font-family: 'Georama', sans-serif;
+    background: linear-gradient(to bottom, #0f2027, #203a43);
+}
+h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+fieldset {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+.formulario {
+    width: 80%;
+    display: block;
+    margin: 25px auto;
+    margin-bottom: 1.9em;
+}
+.controls {
+    /*  */
+    margin-bottom: 1.4em;
+    font-size: 1.3em;
+    color: rgb(64, 64, 64);
+    border-radius: 5px;
+    height: 60px;
+    width: 100%;
+    border: none;
+}
+.controls-check-observaciones {
+    font-size: 1.3em;
+    margin-bottom: .8em;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+.contenedor-controls-1, .contenedor-controls-2 {
+    display: inline-block;
+    height: 100%;
+    width: 44%;
+}
+.contenedor-controls-1 {
+    margin-right: 1.2em;
+}
+.contenedor-controls-2 {
+    margin-left: 1.2em;
+}
+.controls-check {
+    font-size: 1.3em;
+    margin-bottom: .8em;
+    border-radius: 5px;
+    border: none;
+    margin: auto auto 25px 25px;
+}
+
+label {
+    font-size: 1.3em;
+}
+.controls-button {
+    margin-bottom: 1.6em;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 15px;
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+    background: #2C5364;
+    margin: auto;
+    border: none;
+}
+
+
+.controls-final {
+    margin-bottom: 1.4em;
+    font-size: 1.3em;
+    color: rgb(64, 64, 64);
+    border-radius: 5px;
+    height: 60px;
+    width: 180px;
+    display: block;
+    border: none;
+    margin-left: 25px;
+}
+.contenedor-dias-ips {
+/*     background: violet; */
+    display: block;
+}
+.contenedor-interior {
+    float: left;
+/*     background: red;    */
+    width: 50%;
+    height: 300px;
+}
+.contenedor-interior-2 {
+    float: left;
+/*     background: yellow; */
+    width: 50%;
+    height: 300px;
+}
