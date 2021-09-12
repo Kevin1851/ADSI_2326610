@@ -4,6 +4,7 @@
 }
 body {
     background-color: #17272c;
+    font-family: 'Georama', sans-serif;
 }
 nav {
     background-color: #17465a;
@@ -15,7 +16,6 @@ nav {
 }
 ul.menu {
     font-size: 1.3em; 
-    font-family: 'Roboto', initial; 
     list-style-type: none;
     padding: none;
     text-align: center;
