@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(245, 245, 245);
+}
+
+.main-content {
+    width: 90%;
+    box-shadow: 8px 8px 12px black;
+    margin: 20px auto;
+    background: rgb(235, 235, 235);
+}
+
+.titulos {
+    padding: 25px;
+    color: rgba(0, 0, 0, 0.699);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-shadow: .3px 1px 5px rgba(255, 255, 255, 0.5);
+}
+
+.container-flex-1 {
+    display: flex;
+    flex-direction: column;
+    background: #17465a;
+}
+
+.container-flex-2 {
+    display: flex;
+    flex-direction: row;
+    background: #17465a;
+}
+
+.container-flex-3 {
+    display: flex;
+    flex-wrap: wrap;
+    background: #17465a;
+}
+
+.container-flex-4 {
+    display: flex;
+    flex-wrap: nowrap;
+    background: #17465a;
+}
+
+.container-flex-5 {
+    display: flex;
+    justify-content: space-between;
+    background: #17465a;
+}
+
+.container-flex-6 {
+    display: flex;
+    justify-content: space-around;
+    background: #17465a;
+}
+
+.container-flex-7 {
+    display: flex;
+    justify-content: space-evenly;
+    background: #17465a;
+}
+
+.container-flex-8 {
+    display: flex;
+    justify-content: flex-start;
+    background: #17465a;
+}
+
+.container-flex-9 {
+    display: flex;
+    justify-content: flex-end;
+    background: #17465a;
+}
+
+.container-flex-10 {
+    display: flex;
+    justify-content: center;
+    background: #17465a;
+}
+
+.container-flex-11 {
+    display: flex;
+    align-items: flex-start;
+    background: #17465a;
+    height: 600px;
+}
+
+.container-flex-12 {
+    display: flex;
+    align-items: flex-end;
+    background: #17465a;
+    height: 600px;
+}
+
+.container-flex-13 {
+    display: flex;
+    align-items: center;
+    background: #17465a;
+    height: 600px;
+    justify-content: center;
+}
+
+.container-flex-14 {
+    display: flex;
+    align-items: center;
+    background: #17465a;
+    height: 1000px;
+    justify-content: center;
+}
+
+.item-flex {
+    width: 200px;
+    height: 200px;
+    background: rgb(83, 108, 133);
+    color: #fff;
+    font-size: 1.5em;
+    margin: 20px;
+    border-radius: 2%;
+    box-shadow: 2px 2px 6px lightslategrey;
+}
