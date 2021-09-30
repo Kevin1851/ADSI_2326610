@@ -22,7 +22,7 @@ body {
 .login {
     height: 500px;
     width: 400px;
-    background: rgba(245, 245, 245, 0.4); 
+    background: rgba(245, 245, 245, 0.5); 
     position: absolute;
     border-radius: 10%;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
@@ -121,6 +121,7 @@ p {
 
 p a {
     color: rgba(0, 0, 0, 0.777);
+    text-decoration: none;
 }
 
 p a:hover {
@@ -150,6 +151,7 @@ p a:hover {
     .login {
         width: 85%;
         height: 83vh;
+        border-radius: 2%;
     }
 
     p {
