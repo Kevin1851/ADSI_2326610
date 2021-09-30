@@ -109,6 +109,7 @@ body {
     background: #17465a;
     height: 1000px;
     justify-content: center;
+    margin: auto;
 }
 
 .item-flex {
