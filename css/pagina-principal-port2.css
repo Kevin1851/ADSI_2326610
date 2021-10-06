@@ -161,20 +161,20 @@ a.selected{
     height: 85px;
 }
 
-.contenido-principal .box-master a {
+.contenido-principal .box-master .box-principal {
     color: #f1f1f2a1;
     text-decoration: none;
     text-align: center;
     display: block;
-    margin: 10px 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
     font-weight: 300;
     transition: all 300ms;
+    padding-top: 3%;
 }
 
-.contenido-principal .box-master .box-principal:hover a {
-    margin: 12px;
+.contenido-principal .box-master .box-principal:hover {
     font-size: 16px;
     font-weight: 500;
+    padding-top: 3.5%;
 }
