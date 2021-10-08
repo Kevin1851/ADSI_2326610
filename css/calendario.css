@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background: rgb(6, 28, 36);
+}
+
+nav {
+    background-color: #17465a;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: .3px .5px .5px rgba(255, 255, 255, 0.322);
+    cursor: pointer;
+    height: 50px;
+}
+
+nav ul {
+    font-size: 1.3em; 
+    list-style-type: none;
+    padding: none;
+    text-align: end;
+}
+
+nav ul li {
+    padding: 12px;
+    display: inline-block;
+    transition: all .5s;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f2eb;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+}
+
+h1 {
+    text-align: center;
+    color: #f1f1f2eb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+header {
+    margin-top: 5em;
+}
+
+.contenedor {
+      align-items: center ;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr) ;
+      grid-template: "dias-semana  dias-semana dias-semana dias-semana dias-semana dias-semana  dias-semana" 100px
+                      " dia-1         dia-2       dia-3         dia-4        dia-5      dia-6        dia-7 " 100px
+                      "dia-8          dia-9       dia-10        dia-11       dia-12     dia-13       dia-14" 100px
+                      "dia-15         dia-16      dia-17        dia-18       dia-19     dia-20       dia-21" 100px
+                      "dia-22         dia-23      dia-24        dia-25       dia-26     dia-27       dia-28" 100px 
+                      "dia-29         dia-30      dia-21" 100px/
+                      1fr              1fr         1fr             1fr         1fr           1fr         1fr  ;
+      grid-template-columns: minmax(100px 100px) 1fr;
+      width: 1200%;
+      max-width: 1200px;
+      margin:0 auto;
+      box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+      font-size: 1.7em;
+      text-align: center;
+      padding: 20px;
+      gap: 20px;
+      background:rgb(10, 38, 50);
+      font-family: 'Open Sans', sans-serif;
+}
+.item-grid {
+    height: 3.5em;
+    width: 5em;
+    display: block;
+    padding: 10px;
+    color: white;
+    background: #f1f1f2a1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    text-align:start;
+}
+.dias-semana {
+    background: rgb(6, 28, 36);
+    text-align: center;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+}
+.dia-1 { 
+    background-color:#f1f1f2a1;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.dia-5, .dia-12, .dia-19, .dia-26, .dia-8{
+    background: rgb(83, 108, 133);
+}
+
+.letra-8 {
+    text-align:  end;
+    font-size: 0.7em;
+}
+.dia-25 {
+    background:rgb(53, 77, 102);
+}
+.letra-25 {
+    text-align:  end;
+    font-size: 0.7em;
+}
