@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main_content {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    grid-template: "header      nav         nav"          100px
+                   "section     section     section"      350px
+                   "article_1   article_2   article_3"    auto
+                   "article_4   article_5   article_6"    auto /
+                    1fr          1fr         1fr;
+}
+
+header {
+    background: rgb(222,8,1);
+    grid-area: header;
+}
+
+header, nav, section, .img-article {
+
+    border-radius: 12px;
+    color: rgb(245,245,245);
+    font-size: 1.8em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+nav {
+    background: goldenrod;
+    grid-area: nav;
+}
+
+section {
+    background: darkcyan;
+    grid-area: section;
+}
+
+article {
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+article .article_1 {
+
+    grid-area: article_1
+}
+
+article .article_2 {
+
+    grid-area: article_2
+    
+}
+
+article .article_3 {
+
+    grid-area: article_3
+    
+}
+
+article .article_4 {
+
+    grid-area: article_4
+    
+}
+
+article .article_5 {
+
+    grid-area: article_5
+    
+}
+
+article .article_6 {
+    grid-area: article_6
+    
+}
+
+.img-article {
+
+    width: 300px ;
+    height: 250px ;
+    background: rgb(64,64,64);
+    margin: 20px 20px 20px 0;
+}
+
+.titulo_article {
+    margin: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.font_article {
+
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-family: 'Bebas Neue', sans-serif;
+    text-align: justify;
+}
