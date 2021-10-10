@@ -4,10 +4,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .main_content {
-    width: 80%;
+    width: 90%;
+    max-width: 1300px;
     margin: 0 auto;
     display: grid;
     gap: 20px;
@@ -21,9 +23,10 @@
 header {
     background: rgb(222,8,1);
     grid-area: header;
+    margin-top: 30px;
 }
 
-header, nav, section, .img-article {
+header, nav, section, .img_article {
 
     border-radius: 12px;
     color: rgb(245,245,245);
@@ -37,6 +40,7 @@ header, nav, section, .img-article {
 nav {
     background: goldenrod;
     grid-area: nav;
+    margin-top: 30px;
 }
 
 section {
@@ -84,9 +88,9 @@ article .article_6 {
     
 }
 
-.img-article {
+.img_article {
 
-    width: 300px ;
+    width: 100% ;
     height: 250px ;
     background: rgb(64,64,64);
     margin: 20px 20px 20px 0;
@@ -94,7 +98,6 @@ article .article_6 {
 
 .titulo_article {
     margin: 10px;
-    font-family: 'Bebas Neue', sans-serif;
 }
 
 .font_article {
@@ -103,4 +106,48 @@ article .article_6 {
     line-height: 1.5em;
     font-family: 'Bebas Neue', sans-serif;
     text-align: justify;
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    
+    .main_content {
+        width: 92%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 20px;
+        grid-template: "header      nav"                      100px
+                       "section     section"                  350px
+                       "article_1   article_2"                auto
+                       "article_3   article_4"                auto
+                       "article_5   article_6"                auto  /
+                        1fr          1fr;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+    
+    .main_content {
+        width: 95%;
+        max-width: 1300px;
+        margin: 0 auto;
+        display: grid;
+        gap: 10px;
+        grid-template: "header"                               100px
+                       "nav"                                  100px
+                       "section"                              100px
+                       "article_1"                            auto
+                       "article_2"                            auto
+                       "article_3"                            auto
+                       "article_4"                            auto
+                       "article_5"                            auto
+                       "article_6"                            auto  /
+                        1fr;
+    }
+
+    article {
+        max-width: 600px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
