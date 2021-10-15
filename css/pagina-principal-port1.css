@@ -137,14 +137,31 @@ a.selected{
 
 .contenido-principal .box-master {
     width: 90%;
-    height: 115vh;
-    margin: 50px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    margin: 0 auto;
+    gap: 20px;
+    grid: 100px / auto auto auto auto;
+
 }
 
-.contenido-principal .box-master .box-principal {
+.contenido-principal .box-master a {
+
+    border-radius: 12px;
+    color: #f1f1f2a1;
+    font-size: 1.2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+   
+    
+} 
+
+
+
+
+/* .contenido-principal .box-master .box-principal {
     width: 200px;
     height: 80px;
     display: inline-block;
@@ -178,4 +195,4 @@ a.selected{
     font-size: 16px;
     font-weight: 500;
     padding-top: 3.5%;
-}
+} */
