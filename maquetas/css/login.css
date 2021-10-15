@@ -141,35 +141,10 @@ i {
     opacity: .8;
 }
 
-
-
-@media screen and (max-width: 800px) {
-    body {
-        background-image: url(../img/fondo-login-800.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-}
-
 @media screen and (max-width: 500px) {
-    body {
-        background-image: url(../img/fondo-login-400.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .main-content {
-        align-items: flex-end;
-    }
-
+    
     .login {
-        width: 85%;
-        height: 83vh;
-        border-radius: 2%;
-    }
-
-    p {
-        margin-bottom: 5px;
-        margin-top: 8px;
+        height: 100%;
+        width: 100%;
     }
 }
