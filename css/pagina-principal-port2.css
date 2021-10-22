@@ -138,18 +138,16 @@ a.selected{
     transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
 }
 
-.contenido-principal .box-master {
+.contenido-principal .box_master {
     width: 90%;
     display: grid;
     margin: 0 auto;
     gap: 20px;
     grid: 100px
-          100px
-          100px
           100px / 1fr 1fr 1fr 1fr;
 }
 
-.contenido-principal .box-master a {
+.contenido-principal .box_master a {
     border-radius: 5px;
     background:rgb(10, 38, 50);
     color: #f1f1f2a1;
@@ -163,7 +161,7 @@ a.selected{
     transition: all .3s;
 } 
 
-.contenido-principal .box-master a:hover {
+.contenido-principal .box_master a:hover {
     box-shadow: 1px 2px 8px 3px rgb(0 0 0 / 25%);
     -webkit-box-shadow: 1px 2px 8px 3px rgb(0 0 0 / 25%);
     -moz-box-shadow: 1px 2px 8px 3px rgba(0,0,0,0.25);
@@ -212,14 +210,12 @@ a.selected{
         margin-top: 70px;
     }
 
-    .contenido-principal .box-master {
+    .contenido-principal .box_master {
         width: 90%;
         display: grid;
         margin: 0 auto;
         gap: 20px;
         grid: 100px
-              100px
-              100px
               100px
               100px / 1fr 1fr 1fr;
     }
@@ -249,25 +245,18 @@ a.selected{
         width: calc(100% - 80px);
     }
 
-    .contenido-principal .box-master {
+    .contenido-principal .box_master {
         width: 80%;
         display: grid;
         margin: 0 auto;
         gap: 20px;
         grid: 100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px
-        100px  / 1fr;
+              100px
+              100px
+              100px
+              100px
+              100px
+              100px  / 1fr;
     }
 
     /* script */
