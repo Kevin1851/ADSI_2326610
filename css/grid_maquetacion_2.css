@@ -12,6 +12,7 @@
     margin: 0 auto 50px;
     display: grid;
     gap: 20px;
+    justify-items: center;
     grid-template: "navegacion  navegacion  navegacion"   80px
                    "section     section     section"      700px
                    "articulos   articulos   articulos"    auto
@@ -98,6 +99,8 @@ section {
     background-repeat: no-repeat;
     background-position: center center;
     grid-area: section;
+    width: 100%;
+    margin-top: -20px;
 }
 
 .main_content .articulos {
@@ -107,8 +110,10 @@ section {
                    "article_4   article_5   article_6"    570px /
                     1fr          1fr         1fr;
     width: 100%;
-    gap: 30px;
+    gap: 40px;
     justify-items: center;
+    max-width: 1100px;
+    margin-top: 20px;
 }
 
 article {
@@ -117,26 +122,19 @@ article {
 }
 
 article:hover .img_article {
-    height: 350px;
     transition: all .3s;
-    box-shadow: none;
     box-shadow: 1px -1px 8px 3px rgba(0,0,0,0.25);
     -webkit-box-shadow: 1px -1px 8px 3px rgba(0,0,0,0.25);
     -moz-box-shadow: 1px -1px 8px 3px rgba(0,0,0,0.25);
 }
 
 article:hover .descripcion {
-    padding: 0 25px;
     transition: all .3s;
     background: rgba(92,6,50,.3);
     box-shadow: none;
     box-shadow: 1px 2px 8px 3px rgba(0,0,0,0.25);
     -webkit-box-shadow: 1px 2px 8px 3px rgba(0,0,0,0.25);
     -moz-box-shadow: 1px 2px 8px 3px rgba(0,0,0,0.25);
-}
-
-article:hover .font_article {
-    display: block;
 }
 
 article .article_1 {
@@ -176,7 +174,7 @@ article .article_6 {
 .img_article {
 
     width: 100% ;
-    height: 370px;
+    height: 300px;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
     justify-content: center;
@@ -193,15 +191,14 @@ article .article_6 {
 
 .titulo_article {
     margin: 0 10px 10px 0;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .font_article {
 
-    font-size: 1.2em;
+    font-size: 1.1em;
     line-height: 1.5em;
     text-align: justify;
-    display: none;
 }
 
 @media screen and (min-width: 700px) and (max-width: 1100px) {
@@ -274,7 +271,7 @@ article .article_6 {
                        "article_3   article_4"       auto
                        "article_5   article_6"       auto /
                         1fr          1fr;
-        width: 100%;
+        width: 90%;
         gap: 30px;
         justify-items: center;
     }
