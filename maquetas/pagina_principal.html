@@ -18,35 +18,40 @@
 
         </div>
 
-        <div class="menu">
+        <!-- menú activo con JavaScript -->
+        <div id="menu_responsives" class="menu_responsive">
+            <a href="login.html" class="menus"><i class="fas fa-user"></i>Iniciar sesion</a>
+            <a href="#" class="menus"><i class="fas fa-bell"></i>Notificaciones</a>
+            <a href="#" class="menus"><i class="fas fa-cog"></i>Configuración</a>
+            <a href="#" class="last_child">Necesito ayuda</a>
+        </div>
+        <!-- menú activo con JavaScript -->
 
-            <i class="fas fa-bars"></i>
-
+        <div class="icon_menu">
+            <div class="menu">
+                <i id="btn_open" class="fas fa-bars"></i>
+            </div>
         </div>
 
-        <div class="buscar">
+        <div class="opciones_top">
 
             <input type="text" placeholder="Buscar">
 
-        </div>
+            <div class="inicio_sesion">
 
-        <div class="inicio_sesion">
+                <form action="login.html">
 
-            <form action="login.html">
+                    <button type="submit">Iniciar Sesión</button>
 
-                <button type="submit">Iniciar Sesión</button>
-
-            </form>
+                </form>
             
+            </div>
+
+            <a class="a" href="#">Cursos</a>
+
+            <a class="b" href="#">Contáctanos</a>
+
         </div>
-
-        <div class="opciones_1">
-
-            <a href="#">Cursos</a>
-            <a href="#">Contáctanos</a>
-
-        </div>
-
     </header>
 
     <div class="main_content">
@@ -96,6 +101,6 @@
         </div>
 
     </footer>
-    
+    <script src="js/pagina_principal.js"></script>
 </body>
 </html>

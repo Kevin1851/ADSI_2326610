@@ -18,32 +18,41 @@
 
         </div>
 
-        <div class="menu">
+        <!-- menú activo con JavaScript -->
+        <div id="menu_responsives" class="menu_responsive">
+            <a href="#" class="menus"><i class="fas fa-user"></i>Mi cuenta</a>
+            <a href="#" class="menus"><i class="fas fa-bookmark"></i>Mis cursos</a>
+            <a href="#" class="menus"><i class="fas fa-chart-line"></i>Estadisticas</a>
+            <a href="#" class="menus"><i class="fas fa-bell"></i>Notificaciones</a>
+            <a href="#" class="menus"><i class="fas fa-cog"></i>Configuración</a>
+            <a href="#" class="menus"><i class="fas fa-question-circle"></i>Necesito ayuda</a>
+            <a href="pagina_principal.html" class="last_child"><i class="fas fa-sign-out-alt"></i>Cerrar sesion</a>
+        </div>
+        <!-- menú activo con JavaScript -->
 
-            <i class="fas fa-bars"></i>
-
+        <div class="icon_menu">
+            <div class="menu">
+                <i id="btn_open" class="fas fa-bars"></i>
+            </div>
         </div>
 
-        <div class="buscar">
-
+        <div class="opciones_top">
+    
             <input type="text" placeholder="Buscar">
-
-        </div>
-
-        <div class="inicio_sesion">
-
-            <form action="login.html">
-
-                <i class="fas fa-user"></i>
+    
+            <div class="inicio_sesion">
+    
+                <form>
+    
+                    <i id="btn_user" class="fas fa-user"></i>
+                    
+                </form>
                 
-            </form>
-            
-        </div>
+            </div>
+    
+            <a class="a" href="#">Cursos</a>
 
-        <div class="opciones_1">
-
-            <a href="#">Cursos</a>
-            <a href="#">Contáctanos</a>
+            <a class="b" href="#">Contáctanos</a>
 
         </div>
 
@@ -96,6 +105,6 @@
         </div>
 
     </footer>
-    
+    <script src="js/pagina_principal.js"></script>
 </body>
 </html>
