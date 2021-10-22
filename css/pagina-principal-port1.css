@@ -13,8 +13,6 @@
 
 body {
     background: rgb(6, 28, 36);
-    transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    
 }
 
 .menu__side{
@@ -70,7 +68,7 @@ body {
 }
 
 .options__menu a{
-    color: #f1f1f2eb;;
+    color: #f1f1f2eb;
     cursor: default;
     display: block;
     position: relative;
@@ -137,6 +135,7 @@ a.selected{
     right: 0;
     top:40px;
     position: absolute;
+    transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
 }
 
 .contenido-principal .box-master {
@@ -148,7 +147,6 @@ a.selected{
           100px
           100px
           100px / 1fr 1fr 1fr 1fr;
-
 }
 
 .contenido-principal .box-master a {
@@ -213,6 +211,18 @@ a.selected{
     .option_menu {
         margin-top: 70px;
     }
+
+    .contenido-principal .box-master {
+        width: 90%;
+        display: grid;
+        margin: 0 auto;
+        gap: 20px;
+        grid: 100px
+              100px
+              100px
+              100px
+              100px / 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width:700px) {
@@ -239,14 +249,35 @@ a.selected{
         width: calc(100% - 80px);
     }
 
+    .contenido-principal .box-master {
+        width: 80%;
+        display: grid;
+        margin: 0 auto;
+        gap: 20px;
+        grid: 100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px
+        100px  / 1fr;
+    }
+
     /* script */
 
     .body_move {
-        width: calc(100% - 250px);
+        display: none;
     }
 
     .menu_side_move {
-        width: 250px;
+        width: 80%;
     }
 
     .titulo {
