@@ -13,12 +13,13 @@
 
 body {
     background: rgb(6, 28, 36);
+    overflow-y: hidden;
 }
 
 .menu__side{
-    width: 290px;
+    width: 250px;
     height: 100%;
-    background:#0b2c3a;
+    background:rgb(10, 38, 50);
     position: fixed;
     top: 0;
     left: 0;
@@ -42,9 +43,12 @@ body {
     scrollbar-width: none;
 }
 
+.menu__side .user {
+    display: none;
+}
 
 .name__page{
-    padding: 20px 70px;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
     margin-top: 10px;
@@ -65,7 +69,7 @@ body {
 }
 
 .options__menu a{
-    color: #f1f1f2eb;
+    color: #f1f1f2eb;;
     cursor: default;
     display: block;
     position: relative;
@@ -99,7 +103,6 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    margin-left: 30px;
 }
 
 .options__menu .option i{
@@ -128,16 +131,120 @@ a.selected{
 }
 
 .contenido-principal {
-    width: calc(100% - 290px);
-    height: 100%;
+    width: calc(100% - 250px);
     right: 0;
     position: absolute;
+    transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.titulo {
+.marca_agua {
     font-size: 150px;
     font-family: 'Bebas Neue', sans-serif;
     text-align: center;
     margin-top: 25%;
     color: #f1f1f2a1;
+}
+
+@media screen and (min-width: 700px) and (max-width:1100px) {
+    
+    .menu__side {
+        width: 80px;
+        border-right: 20px solid rgb(10, 38, 50);
+    }
+    
+    .menu__side .user {
+        margin: 30px 0 0 30px;
+        display: block;
+    }
+
+    .name__page {
+        display: none;
+    }
+
+    .options__menu {
+        margin-top: -20px;
+    }
+
+    .contenido-principal {
+        width: calc(100% - 80px);
+    }
+
+    .marca_agua {
+        font-size: 70px;
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        height: 100%;
+        margin-top: 40%;
+        color: #f1f1f2a1;
+    }
+
+    /* script */
+
+    .body_move {
+        width: calc(100% - 250px);
+    }
+
+    .menu_side_move {
+        width: 250px;
+    }
+    
+    .titulo {
+        display: block;
+    }
+
+    .option_menu {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    
+    .menu__side {
+        width: 80px;
+        border-right: 20px solid rgb(10, 38, 50);
+    }
+    
+    .menu__side .user {
+        margin: 30px 0 0 30px;
+        display: block;
+    }
+
+    .name__page {
+        display: none;
+    }
+
+    .options__menu {
+        margin-top: -20px;
+    }
+
+    .contenido-principal {
+        width: calc(100% - 80px);
+    }
+
+    .marca_agua {
+        font-size: 50px;
+        font-family: 'Bebas Neue', sans-serif;
+        text-align: center;
+        height: 100%;
+        margin-top: 40%;
+        color: #f1f1f2a1;
+    }
+
+    /* script */
+
+    .body_move {
+        display: none;
+    }
+
+    .menu_side_move {
+        width: 80%;
+    }
+
+    .titulo {
+        display: block;
+    }
+
+    .option_menu {
+        margin-top: 70px;
+    }
 }
