@@ -200,21 +200,24 @@ header {
 }
 
 .programacion {
-
     grid-area: programacion;
 }
 
 .idiomas, .programacion {
-
     text-align: justify;
     padding: 20px;
     background: #0b2c3a;
     border-radius: 12px;
     cursor: pointer;
+    color: rgba(255,255,245,.8);
+    text-decoration: none;
+}
+
+.idiomas:hover, .programacion:hover {
+    background: #0a2531;
 }
 
 .idiomas .imagen_articulo, .programacion .imagen_articulo {
-
     height: 200px;
     display: flex;
     justify-content: center;
@@ -224,12 +227,10 @@ header {
 }
 
 .idiomas h2, p, .programacion h2, p {
-
     padding-top: 20px;
 }
 
 footer {
-
     background: rgba(3,3,3,.4);
     display: grid;
     grid-template: "correo opciones" auto /
@@ -237,17 +238,14 @@ footer {
     margin: 50px auto 0 auto;
     width: 85%;
     border-radius: 12px 12px 0 0;
-
 }
 
 .correo {
-    
     padding: 40px;
     grid-area: correo;
 }
 
 .correo input {
-
     padding: 10px;
     color: white;
     border: none;
@@ -259,12 +257,10 @@ footer {
 
 .correo input:focus, 
 .correo input:active {
-
     outline: none;
 }
 
 .correo button {
-
     padding: 10px;
     color: white;
     border: none;
@@ -275,14 +271,12 @@ footer {
 }
 
 .correo button:hover {
-
     background: rgb(10, 38, 50);
     cursor: pointer;
     color: f1f1f2a1;
 }
 
 .opciones {
-
     width: 50%;
     display: flex;
     justify-content: center;
@@ -291,7 +285,6 @@ footer {
 }
 
 .opciones a {
-
     color: white;
     text-decoration: none;
     font-family:'Roboto', sans-serif;
@@ -302,7 +295,6 @@ footer {
 }
 
 .opciones a:hover {
-    
     color: #f1f1f2a1;
 }
 

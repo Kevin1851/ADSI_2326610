@@ -156,7 +156,6 @@ header {
 }
 
 .categorias_cursos {
-
     display: grid;
     grid-template: "idiomas programacion" auto /
                     1fr     1fr;
@@ -165,26 +164,28 @@ header {
 }
 
 .idiomas {
-
     grid-area: idiomas;
 }
 
 .programacion {
-
     grid-area: programacion;
 }
 
 .idiomas, .programacion {
-
     text-align: justify;
     padding: 20px;
     background: #0b2c3a;
     border-radius: 12px;
     cursor: pointer;
+    color: rgba(255,255,245,.8);
+    text-decoration: none;
+}
+
+.idiomas:hover, .programacion:hover {
+    background: #0a2531;
 }
 
 .idiomas .imagen_articulo, .programacion .imagen_articulo {
-
     height: 200px;
     display: flex;
     justify-content: center;
@@ -194,7 +195,6 @@ header {
 }
 
 .idiomas h2, p, .programacion h2, p {
-
     padding-top: 20px;
 }
 
