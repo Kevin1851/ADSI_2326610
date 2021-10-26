@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -12,11 +12,12 @@ body {
 }
 
 header {
-    top: 0;
     background: #0b2c3a;
     height: 70px;
     width: 100%;
     position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 10px 0 #000;
 }
 
 .logo {
@@ -30,30 +31,33 @@ header {
 }
 
 .menu_responsive {
-    display: none;
     position: fixed;
-    width: 250px;
+    width: 300px;
     height: 100%;
-    right: 0;
-    text-align: left;
-    padding-left: 50px;
+    right: -300px;
     margin-top: 70px;
     background: rgba(3,3,3,.8);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    transition: all 300ms;
 }
 
-/* JavaScript */
+/* estilos de JavaSript */
 .menu_responsives {
-    display: block;
+    right: 0;
 }
-/* JavaScript */
+/* estilos de JavaSript */
 
 .menu_responsive a {
-    display: block;
-    padding: 20px 0;
+    padding: 15px 40px;
     text-decoration: none;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-family:'Poppins', sans-serif;
     color: rgba(255,255,245,.8);
+    text-align: left;
 }
 
 .menu_responsive a:hover {
@@ -88,10 +92,10 @@ header {
 
 .opciones_top input {
     color: white;
-    padding: 7px 0;
+    padding: 7px 10px;
     border: none;
     border-radius: 2px;
-    font-size: 1.2em;
+    font-size: 1em;
     background: none;
     border-bottom: 1px solid #f1f1f2a1;
     grid-area: input;    
@@ -103,15 +107,10 @@ header {
 
 .a, .b {
     color: rgba(255,255,245,.8);
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
-    font-family:'Roboto', sans-serif;
-    border-left: 1px solid rgba(255,255,245,.8);
+    font-family: 'Poppins', sans-serif;
     padding: 0 10px;
-}
-
-.b {
-    border-right: 1px solid rgba(255,255,245,.8);
 }
 
 .a:hover {
@@ -150,13 +149,11 @@ header {
 }
 
 .opciones_top input::selection {
-
     border: none;
 }
 
 .opciones_top input:focus, 
 .opciones_top input:active {
-
     outline: none;
 }
 
@@ -169,7 +166,7 @@ header {
     width: 85%;
     font-size: 1.2em;
     color: rgba(255,255,245,.8);
-    font-family:'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .imagen_principal {
@@ -186,7 +183,6 @@ header {
 }
 
 .categorias_cursos {
-
     display: grid;
     grid-template: "idiomas programacion" auto /
                     1fr     1fr;
@@ -195,7 +191,6 @@ header {
 }
 
 .idiomas {
-
     grid-area: idiomas;
 }
 
@@ -211,10 +206,12 @@ header {
     cursor: pointer;
     color: rgba(255,255,245,.8);
     text-decoration: none;
+    transition: all 300ms;
 }
 
 .idiomas:hover, .programacion:hover {
     background: #0a2531;
+    box-shadow: 1px 1px 10px 0 #000;
 }
 
 .idiomas .imagen_articulo, .programacion .imagen_articulo {
@@ -236,8 +233,8 @@ footer {
     grid-template: "correo opciones" auto /
                     1fr    1fr;
     margin: 50px auto 0 auto;
-    width: 85%;
-    border-radius: 12px 12px 0 0;
+    width: 100%;
+    justify-items: center;
 }
 
 .correo {
@@ -250,7 +247,7 @@ footer {
     color: white;
     border: none;
     border-radius: 2px;
-    font-size: 1.2em;
+    font-size: 1em;
     background: none;
     border-bottom: 1px solid #f1f1f2a1;
 }
@@ -265,7 +262,7 @@ footer {
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1em;
     background: #0b2c3a;
     margin-left: 10px;
 }
@@ -287,9 +284,9 @@ footer {
 .opciones a {
     color: white;
     text-decoration: none;
-    font-family:'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-left: 40px;
-    font-size: 1.2em;
+    font-size: 1em;
     border-right: 1px solid #f1f1f2a1;
     padding-right: 40px;
 }
@@ -301,21 +298,23 @@ footer {
 @media screen and (max-width: 1000px) and (min-width: 700px) {
     
     .menu_responsive {
-        display: none;
         position: fixed;
-        width: 100%;
+        width: 300px;
+        height: 100%;
+        right: -300px;
         margin-top: 70px;
         background: rgba(3,3,3,.8);
         text-align: center;
-        font-family:'Roboto', sans-serif;
-        font-size: 1.2em;
-        overflow-y: scroll;
-        padding-left: 0;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        transition: all 300ms;
     }
 
     /* estilos de JavaSript */
     .menu_responsives {
-        display: block;
+        right: 0;
     }
     /* estilos de JavaSript */
 
@@ -323,7 +322,7 @@ footer {
         display: block;
         text-decoration: none;
         color: rgba(255,255,245,.8);
-        padding: 10px 0;
+        padding: 10px 60px;
         border-bottom: 1px solid rgba(255,255,245,.3);
         font-size: 1em;
     }
@@ -382,37 +381,39 @@ footer {
 @media screen and (max-width:700px) {
 
     .menu_responsive {
-        display: none;
         position: fixed;
         width: 100%;
+        height: 100%;
+        right: -100%;
         margin-top: 70px;
-        padding-left: 0;
         background: rgba(3,3,3,.8);
         text-align: center;
-        font-family:'Roboto', sans-serif;
-        font-size: 1.2em;
-        overflow-y: scroll;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+        transition: all 300ms;
     }
 
+    /* estilos de JavaSript */
+    .menu_responsives {
+        right: 0;
+    }
+    /* estilos de JavaSript */
+
     .menu_responsive a {
-        display: block;
         text-decoration: none;
         color: rgba(255,255,245,.8);
         padding: 10px 0;
         border-bottom: 1px solid rgba(255,255,245,.3);
         font-size: 1em;
+        text-align: center;
     }
 
     .menu_responsive a i {
-        margin-right: 10px;
+        margin-right: 30px;
     }
 
-    /* estilos de JavaSript */
-    .menu_responsives {
-        display: block;
-    }
-    /* estilos de JavaSript */
-    
     .icon_menu {
         display: grid;
         grid-template: "menu" 70px /
