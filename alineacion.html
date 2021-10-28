@@ -11,9 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
+  <nav id="nav_oculto">
+
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
+    </div>
+
     <ul class="menu">
       <li class="submenu"><a href="index.html">Inicio</a></li>
       <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -38,8 +44,11 @@
       <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
     </ul>
   </nav>
-  <div class="contenido-principal">
-    <h1>Alineacion de Texto.</h1>
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <h1>Alineacion de Texto.</h1>
     <p class="alineacon-izquierda">Este texto se encuentra alineado a la izquierda.</p>
     <p class="alineacon-izquierda">Este texto se encuentra alineado a la izquierda.</p>
     <p class="alineacon-izquierda">Este texto se encuentra alineado a la izquierda.</p>
@@ -58,6 +67,8 @@
     <p class="alineacion-justificado">Este texto se encuentra justificado.</p><br>
     <p class="alineacion-justificado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, esse quas. Harum recusandae natus qui excepturi obcaecati sit quia quidem, totam enim officiis blanditiis, ullam sequi eum ab reprehenderit fugiat doloribus asperiores in nisi iure? Itaque vitae ad deserunt hic beatae adipisci, assumenda, soluta neque officia distinctio accusantium? Iste corrupti ab consectetur quia esse rem illo facilis corporis atque? Minima pariatur est laudantium vel corporis molestiae debitis obcaecati iste voluptates non fugit ipsam harum delectus cum sequi culpa eos temporibus praesentium illo, totam commodi sit labore veritatis at. Tempora ad natus rerum explicabo dolore harum, aliquam voluptate vitae quo accusantium.</p><br>
     <p class="alineacion-justificado">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, esse quas. Harum recusandae natus qui excepturi obcaecati sit quia quidem, totam enim officiis blanditiis, ullam sequi eum ab reprehenderit fugiat doloribus asperiores in nisi iure? Itaque vitae ad deserunt hic beatae adipisci, assumenda, soluta neque officia distinctio accusantium? Iste corrupti ab consectetur quia esse rem illo facilis corporis atque? Minima pariatur est laudantium vel corporis molestiae debitis obcaecati iste voluptates non fugit ipsam harum delectus cum sequi culpa eos temporibus praesentium illo, totam commodi sit labore veritatis at. Tempora ad natus rerum explicabo dolore harum, aliquam voluptate vitae quo accusantium.</p>
+    </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

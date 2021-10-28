@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
+  <nav id="nav_oculto">
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
+    </div>
     <ul class="menu">
       <li class="submenu"><a href="index.html">Inicio</a></li>
       <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -40,8 +44,11 @@
       <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
     </ul>
   </nav>
-  <div class="contenido-principal">
-    <h1>Fuentes</h1><br>
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <h1>Fuentes</h1><br>
     <p>Vuelvete parte de nuestra comunidad</p>      
     <p>¿Que estas esperando?</p>
     <h3>Suscribete ahora</h3>
@@ -49,6 +56,8 @@
     <p>Informate de las nuevas tendencias <span>¡GRATIS!</span></p>
     <p class="fuente-net">Esta es una fuente almacenada localmente.</p>
     <p class="fuente-net2">Netflix</p>
+    </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

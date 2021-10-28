@@ -135,7 +135,7 @@ a.selected{
     right: 0;
     top:40px;
     position: absolute;
-    transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86)
+    transition: width .3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
 .contenido-principal .box-master {
@@ -180,6 +180,7 @@ a.selected{
     .menu__side .user {
         margin: 30px 0 0 30px;
         display: block;
+        cursor: pointer;
     }
 
     .name__page {

@@ -14,8 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 <body>
-  <nav>
+  <nav id="nav_oculto">
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
+    </div>
     <ul class="menu">
       <li class="submenu"><a href="index.html">Inicio</a></li>
       <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -40,10 +44,15 @@
       <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
     </ul>
   </nav>
-  <div class="contenido-principal">
-    <p class="texto-identado"> <span class="letra-especial">E</span>ste es un texto identado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nulla recusandae ab explicabo aut enim quia quaerat aperiam. Voluptatem excepturi ut corporis, similique nihil numquam amet adipisci mollitia deserunt, minima magnam quis. Dolorem doloremque ducimus nisi, cum perspiciatis enim! Laborum officiis ex maxime aperiam, illum animi impedit, numquam explicabo accusamus, cumque eveniet similique nesciunt earum officia facilis corrupti tenetur ipsa tempore facere sit libero harum dolorem modi quasi? In id accusantium itaque perferendis ratione a velit illum voluptas molestiae inventore eligendi suscipit, quod alias hic laudantium libero unde autem facere. Totam necessitatibus nisi impedit blanditiis assumenda quos voluptates dolor tenetur.</p>
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <p class="texto-identado"> <span class="letra-especial">E</span>ste es un texto identado. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nulla recusandae ab explicabo aut enim quia quaerat aperiam. Voluptatem excepturi ut corporis, similique nihil numquam amet adipisci mollitia deserunt, minima magnam quis. Dolorem doloremque ducimus nisi, cum perspiciatis enim! Laborum officiis ex maxime aperiam, illum animi impedit, numquam explicabo accusamus, cumque eveniet similique nesciunt earum officia facilis corrupti tenetur ipsa tempore facere sit libero harum dolorem modi quasi? In id accusantium itaque perferendis ratione a velit illum voluptas molestiae inventore eligendi suscipit, quod alias hic laudantium libero unde autem facere. Totam necessitatibus nisi impedit blanditiis assumenda quos voluptates dolor tenetur.</p>
     <h2>Cita en Bloque (Blockquote)</h2>
     <blockquote>Solo los muertos han visto <br> el final de la guerra. <br> Platon.</blockquote>
+    </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

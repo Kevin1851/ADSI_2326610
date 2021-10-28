@@ -11,9 +11,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
+  <nav id="nav_oculto">
+
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
+    </div>
+
     <ul class="menu">
       <li class="submenu"><a href="index.html">Inicio</a></li>
       <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -38,14 +44,19 @@
       <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
     </ul>
   </nav>
-  <div class="contenido-principal">
-    <h1>Colores en html</h1><br>
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <h1>Colores en html</h1><br>
     <p>Esta es una prueba de colores</p>
     <p class="color-azul">Este es color es llamado por su nombre</p>
     <p class="color-verde">Este es el color es llamado por su codigo rgb</p>
     <p class="color-gris">Este es el color es llamado por su codigo hexadecimal </p>
     <p class="color-redbull">Este es el color oficial de Red Bull</p>
     <p class="color-1001fonts">Este es el color oficial de 1001fonts</p>
-  </div>
+    </div>
+  </div>}
+  <script src="js/index.js"></script>
 </body>
 </html>

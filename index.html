@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mi sitio web</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="css/submenu.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav>
+  <nav id="nav_oculto">
+
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
+    </div>
+
     <ul class="menu">
       <li class="submenu"><a href="pagina-principal-port1.html">Inicio</a></li>
       <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -39,13 +40,17 @@
       <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
     </ul>
   </nav>
-  <div class="contenido-principal">
-    <div class="main-content">
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
       <h1>Hello word!!</h1><br>
       <h2 class="nombre">EL MUNDO DE LOS VIDEOJUEGOS</h2><br>
       <h2>Conoceras todo a cerca de este maravilloso mundo</h2><br>
       <a href="https://sena.territorio.la/cms/index.php">Ir a territorium</a>
     </div>
   </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

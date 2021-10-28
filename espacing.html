@@ -11,9 +11,13 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Georama:wght@500&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
     </head>
     <body>
-      <nav>
+      <nav id="nav_oculto">
+        <div id="titulo" class="name__page">
+          <h4><span>K</span>evin</h4>
+        </div>
         <ul class="menu">
           <li class="submenu"><a href="index.html">Inicio</a></li>
           <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
@@ -38,14 +42,19 @@
           <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
         </ul>
       </nav>
-      <div class="contenido-principal">
-        <h1>Espaciado en Texto</h1><br>
+      <div id="contenido_principal_desplegado" class="contenido-principal">
+        <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <h1>Espaciado en Texto</h1><br>
         <h2>Espacio entre Letras:</h2>
         <p class="espacio-letras">Este texto tiene un espaciado entre letras. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores vel, corporis, voluptate facilis, fugit iste totam quod consectetur dolore veritatis nesciunt corrupti incidunt nemo cum!</p><br>
         <h2>Espacio entre Palabras:</h2>
         <p class="espacio-palabras">Este texto tiene un espaciado entre palabras. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae amet a ducimus iusto accusamus exercitationem dolorem tenetur odit. Impedit quidem sapiente, molestias aperiam magni voluptas!</p><br>
         <h2>Espacio entre Lineas:</h2>
         <p class="espacio-lineas">Este texto tiene un espaciado entre lineas. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quis ipsum enim magni odio eligendi, dicta eius veritatis sequi. Porro modi nam commodi laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa unde, excepturi reiciendis, inventore harum quibusdam amet similique iste dolor tempore culpa. Animi exercitationem ratione consequuntur possimus ex iure pariatur! </p>
+    </div>
       </div>
+      <script src="js/index.js"></script>
     </body>
     </html>
