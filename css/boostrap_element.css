@@ -1,0 +1,37 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-check label, input {
+    cursor: pointer;
+}
+
+.general {
+    margin: 30px auto;
+}
+
+.row>[class^="coll"] {
+    border: 1px solid rgba(0,0,0,.5);
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Contenedores Responsive */
+    .main_content {
+        width: 95%;
+        margin: auto;
+    }
+
+    .box-1 {
+        height: 50px;
+        background-color: #7b7b7b;
+        margin: 15px auto;
+        text-align: center;
+        color: #f2f2f2;
+        border-radius: 15px;
+    }
+/* Contenedores Responsive */
+
+
