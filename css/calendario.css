@@ -48,10 +48,7 @@ h1 {
     color: #f1f1f2eb;
     font-family: 'Open Sans', sans-serif;
     font-weight: 500;
-}
-
-header {
-    margin-top: 5em;
+    margin: 70px 0;
 }
 
 .contenedor {
@@ -65,35 +62,35 @@ header {
                       "dia-22         dia-23      dia-24        dia-25       dia-26     dia-27       dia-28" 100px 
                       "dia-29         dia-30      dia-21" 100px/
                       1fr              1fr         1fr             1fr         1fr           1fr         1fr  ;
-      grid-template-columns: minmax(100px 100px) 1fr;
-      width: 1200%;
       max-width: 1200px;
-      margin:0 auto;
+      width: 85%;
+      margin: 0 auto;
       box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
       font-size: 1.7em;
       text-align: center;
       padding: 20px;
-      gap: 20px;
-      background:rgb(10, 38, 50);
+      background:rgb(235,235,235);
       font-family: 'Open Sans', sans-serif;
+      border-radius: 20px;
 }
 .item-grid {
-    height: 3.5em;
-    width: 5em;
+    height: 100px;
+    width: 100%;
     display: block;
     padding: 10px;
     color: white;
-    background: #f1f1f2a1;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, .25);
+    background: #666;
     text-align:start;
+    border: .5px solid rgba(0, 0, 0, 0.2);
 }
 .dias-semana {
-    background: rgb(6, 28, 36);
+    background:rgb(83, 108, 133);
     text-align: center;
-    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.4);
+    border: .5px solid rgba(0, 0, 0, 0.2);
+    font-size: 45px;
 }
 .dia-1 { 
-    background-color:#f1f1f2a1;
+    background-color:#666;
     grid-column-start: 4;
     grid-column-end: 5;
 }
@@ -106,7 +103,7 @@ header {
     font-size: 0.7em;
 }
 .dia-25 {
-    background:rgb(53, 77, 102);
+    background:rgb(83, 108, 133);
 }
 .letra-25 {
     text-align:  end;
