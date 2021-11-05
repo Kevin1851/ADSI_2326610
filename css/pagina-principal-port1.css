@@ -131,7 +131,6 @@ a.selected{
 
 .contenido-principal {
     width: calc(100% - 250px);
-    height: 100%;
     right: 0;
     top:40px;
     position: absolute;
