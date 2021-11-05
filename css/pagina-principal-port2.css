@@ -152,6 +152,7 @@ a.selected{
     background:rgb(10, 38, 50);
     color: #f1f1f2a1;
     font-size: 1.2em;
+    font-weight: 300;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -251,13 +252,11 @@ a.selected{
         display: grid;
         margin: 0 auto;
         gap: 20px;
-        grid: 100px
-              100px
-              100px
-              100px
-              100px
-              100px
-              100px  / 1fr;
+        font-size: 14px;
+        grid: 80px
+              80px
+              80px
+              80px  / 1fr 1fr;
     }
 
     /* script */
