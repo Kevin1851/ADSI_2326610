@@ -33,8 +33,13 @@ body {
 }
 
 .pagoProductos:hover {
-    background: rgb(210,196,6);
+    background: rgb(238, 223, 13);
     cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pagoProductos:active {
+    background: rgb(184, 174, 38);
 }
 
 .pagoProductos h2 {
@@ -63,6 +68,7 @@ body {
 #precio {
     font-size: 1.3em;
     font-weight: 700;
+    
 }
 
 .parteInferior {
@@ -89,6 +95,10 @@ body {
     background: #dddde2;
 }
 
+.eliminar:active {
+    background: #bfbfc4;
+}
+
 .guardar {
     height: 40px;
     display: flex;
@@ -102,6 +112,14 @@ body {
 .guardar:hover {
     cursor: pointer;
     background: #dddde2;
+}
+
+.guardar:active {
+    background: #bfbfc4;
+}
+
+.guardar-screen {
+    display: none;
 }
 
 h1 {
@@ -134,6 +152,10 @@ h2 {
     color: #dddde2;
 }
 
+.suma:active {
+    background-size: 40%;
+}
+
 .suma:hover {
     cursor: pointer;
 }
@@ -143,6 +165,7 @@ h2 {
     height: 40px;
     border-top: 1px solid rgba(0,0,0,.5);
     border-bottom: 1px solid rgba(0,0,0,.5);
+    background: #dddde2;
 }
 
 .resta {
@@ -160,4 +183,72 @@ h2 {
 
 .resta:hover {
     cursor: pointer;
+}
+
+.resta:active {
+    background-size: 40%;
+}
+
+@media screen and (max-width: 700px) {
+    
+    body {
+        height: auto;
+    }
+    
+    .principal {
+        border: none;
+        width: 95%;
+        margin-top: 10px;
+    }
+
+    .pagoProductos {
+        width: 100%;
+    }
+
+    .divisionCaratula {
+        display: block;
+    }
+
+    .caratula {
+        width: 100%;
+        height: 400px;
+        background-size:contain;
+    }
+
+    .descripcion {
+        padding: 10px 0 0 0;
+        width: 95%;
+    }
+
+    .otrasOpciones {
+        width: 100%;
+    }
+
+    .eliminar {
+        width: 100%;
+    }
+
+    .guardar {
+        display: none;
+    }
+
+    .guardar-screen {
+        display: block;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        border: 1px solid rgba(0,0,0,.5);
+        border-radius: 9px;
+        margin-top: 10px;
+        padding-left: 5px;
+    }
+
+    .guardar-screen:hover {
+        cursor: pointer;
+        background: #dddde2;
+    }
+    
+    .guardar-screen:active {
+        background: #bfbfc4;
+    }
 }
