@@ -65,7 +65,7 @@ body {
     width: 231px;
 }
 
-#precio {
+#subtotal {
     font-size: 1.3em;
     font-weight: 700;
     
@@ -142,7 +142,7 @@ h2 {
 .suma {
     width: 50px;
     height: 40px;
-    background-image: url(../img/signo-mas.svg);
+    background-image: url(../img/signo-menos.svg);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: center;
@@ -179,7 +179,7 @@ h2 {
 .resta {
     width: 50px;
     height: 40px;
-    background-image: url(../img/signo-menos.svg);
+    background-image: url(../img/signo-mas.svg);
     background-repeat: no-repeat;
     background-size: 35%;
     background-position: center;

@@ -11,7 +11,7 @@
 <body>
     <div class="principal">
         <div class="parteSuperior">
-            <h2>Subtotal   COP <span id="precio">480000</span></h2>
+            <h2>Subtotal   COP <span id="subtotal">480000</span></h2>
             <div class="pagoProductos">
                 <h2>Proceder al pago (<span id="numProductos">1</span> Productos)</h2>
             </div>
@@ -21,14 +21,14 @@
             <div class="descripcion">
                 <h1>Assassin's Creed Valhalla</h1><br>
                 <h2>Por Ubisoft</h2><br>
-                <h2>COP 480.000</h2>
+                <h2>COP <span id="precioEstable">480.000</span></h2>
             </div>
         </div>
         <div class="parteInferior">
             <div class="cantidadUnidades">
-                <div class="suma" onclick="aumentar();"></div>
+                <div class="suma" onclick="disminuir();"></div>
                 <input readonly class="numeroUnidades" type="text" id="numUnidades" value="1">
-                <div class="resta" onclick="disminuir();"></div>
+                <div class="resta" onclick="aumentar();"></div>
             </div>
             <div class="otrasOpciones">
                 <div class="eliminar">
