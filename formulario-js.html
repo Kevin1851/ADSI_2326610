@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con JavaScript</title>
+    <link rel="stylesheet" href="css/js-formulario.css">
+</head>
+<body>
+    <div class="principal">
+        <form class="formulario">
+            <fieldset>
+    
+                <h1>Registro de Productos</h1>
+                <div>
+                    <label>Código del producto</label>
+                    <input id="codigo" type="text">
+                </div>
+                <div>
+                    <label>Descripción</label>
+                    <input id="descripcion" type="text">
+                </div>
+                <div>
+                    <label>Valor unitario</label>
+                    <input id="valorUnitario" type="text">
+                </div>
+                <div>
+                    <label>Unidades en Stock</label>
+                    <input id="unidadesStock" type="text">
+                </div>
+    
+                <input type="button" value="Cargar Productos" onclick="cargarProducto();">
+
+            </fieldset>
+        </form>
+    
+        <div id="table-js"></div>
+    </div>
+
+    <script src="js/js-formulario.js"></script>
+</body>
+</html>
