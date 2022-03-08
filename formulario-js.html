@@ -13,24 +13,23 @@
             <fieldset>
     
                 <h1>Registro de Productos</h1>
-                <div>
+                <div class="cuerpoFormulario">
                     <label>Código del producto</label>
                     <input id="codigo" type="text">
                 </div>
-                <div>
+                <div class="cuerpoFormulario">
                     <label>Descripción</label>
                     <input id="descripcion" type="text">
                 </div>
-                <div>
+                <div class="pieFormulario">
                     <label>Valor unitario</label>
                     <input id="valorUnitario" type="text">
-                </div>
-                <div>
+                
                     <label>Unidades en Stock</label>
                     <input id="unidadesStock" type="text">
                 </div>
     
-                <input type="button" value="Cargar Productos" onclick="cargarProducto();">
+                <input id="envioFormulario" type="button" value="Cargar Productos" onclick="cargarProducto();">
 
             </fieldset>
         </form>

@@ -83,8 +83,6 @@ function cargarInformacionTabla(codigo, descripcion, valorUnitario, unidadesStoc
     let nodoUnidadesStockTD = document.createElement("td");
     nodoProducto.appendChild(nodoUnidadesStockTD);
     nodoUnidadesStockTD.appendChild(unidadesStock);
-
-    limpiarFormulario();
 }
 
 function limpiarFormulario(){
