@@ -61,6 +61,8 @@ function cargarProducto(){
     let inputUnidadesStockNodo = document.createTextNode(inputUnidadesStock);
     
     cargarInformacionTabla(inputCodigoNodo, inputDescripcionNodo, inputValorUnitarioNodo, inputUnidadesStockNodo);
+
+    limpiarFormulario()
 }
 
 function cargarInformacionTabla(codigo, descripcion, valorUnitario, unidadesStock){
@@ -86,8 +88,8 @@ function cargarInformacionTabla(codigo, descripcion, valorUnitario, unidadesStoc
 }
 
 function limpiarFormulario(){
-    document.getElementById("codigo").innerHTML = "";
-    document.getElementById("descripcion").innerHTML = "";
-    document.getElementById("valorUnitario").innerHTML = "";
-    document.getElementById("unidadesStock").innerHTML = "";
+    document.getElementById("codigo").value = "";
+    document.getElementById("descripcion").value = "";
+    document.getElementById("valorUnitario").value = "";
+    document.getElementById("unidadesStock").value = "";
 }
