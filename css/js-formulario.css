@@ -10,7 +10,7 @@
     margin: 30px auto;
     width: 70%;
     padding: 18px;
-    border-radius: 5px;
+
     border-collapse: collapse;
 }
 
@@ -38,41 +38,44 @@ h1 {
 }
 
 .cuerpoFormulario {
-    display: inline-block;
-    padding: 10px;
-    width: 100%;
-}
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
 
 .pieFormulario {
-    display: inline;
-    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 input {
     height: 30px;
+    border-radius: 9px;
+    border: 1px solid;
+    width: 31%;
+    height: 40px;
+    margin: 15px 0;
 }
 
 #codigo {
-    width: 40%;
+    width: 85%;
 }
 
 #descripcion {
-    width: 80%;
-}
-
-#valorUnitario {
-    width: 30%;
-}
-
-#unidadesStock {
-    width: 30%;
+    width: 85%;
 }
 
 #envioFormulario {
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 20px auto;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+#envioFormulario:hover {
+    background-color: rgb(189, 189, 189);
+    transition: all 4ms;
 }
 
 label {
