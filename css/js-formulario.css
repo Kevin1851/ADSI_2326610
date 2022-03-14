@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: monospace;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .table-style {
@@ -28,13 +30,15 @@ fieldset {
     border-radius: 20px;
     max-width: 70%;
     display: block;
-    margin: 30px auto;
+    margin: 10% auto;
+    border: 1px solid rgba(48,48,48,.5);
 }
 
 h1 {
     display: block;
     text-align: center;
     margin-bottom: 15px;
+    cursor: default;
 }
 
 .cuerpoFormulario {
@@ -51,10 +55,16 @@ h1 {
 input {
     height: 30px;
     border-radius: 9px;
-    border: 1px solid;
+    border: 1px solid rgba(48,48,48,.5);
     width: 31%;
     height: 40px;
     margin: 15px 0;
+}
+
+input:focus {
+    box-shadow: 1px .5px 3px .5px rgba(48,48,48,.4);
+    outline: none;
+    background: #fafafa;
 }
 
 #codigo {
@@ -72,9 +82,13 @@ input {
     width: 100%;
     font-size: 1.2em;
     cursor: pointer;
+    background-color: #1a73e8;
+    border: none;
+    color: #fff;
 }
 #envioFormulario:hover {
-    background-color: rgb(189, 189, 189);
+    background-color: #206dd3;
+    box-shadow: 1px .5px 1px 1px rgba(48,48,48,.8);
     transition: all 4ms;
 }
 
