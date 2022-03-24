@@ -8,7 +8,7 @@
 }
 
 body {
-    background: rgb(245,245,245);
+    background: #ededed;
 }
 
 .header {
@@ -70,11 +70,44 @@ body {
     cursor: pointer;
 }
 .mainContent {
-    padding: 15px;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .contenidoIndividual {
     background: #fff;
     border-radius: 15px;
-    padding: 15px;
+    width: 300px;
+    margin: auto 20px;
+    cursor: pointer;
+}
+
+.imagen {
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+}
+
+.descripcion {
+    height: auto;
+    padding: 20px;
+}
+
+.precio {
+    display: block;
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 800px) {
+    .mainContent {
+        display: block;
+    }
+
+    .contenidoIndividual {
+        margin: 20px;
+    }
 }

@@ -9,100 +9,317 @@ class Automovil{
     }
 }
 
-let auto = new Automovil ("Mazda ", "Touring ", "$10.000.000 ", "img/mazda.jpg")
+let auto = new Automovil ("Mazda ", "Touring ", "$82.000.000 ", "img/mazda.jpg")
 
-function validarMazda () {
-    alert("¡" + auto.Marca + " " + auto.Modelo + " "  + "Es el automovil que necesitas!");
-    
-    mostrarVehiculo();
-}
+let auto2 = new Automovil ("Mazda ", "Grand Touring ", "$110.000.000 ", "img/mazda-6.jpg")
+
+let auto3 = new Automovil ("Mazda ", "Grand Touring 2021", "$132.000.000 ", "img/mazda-7.jpg")
+
 function mostrarVehiculo() {
     let contentPrincipal = document.getElementById("mainContent");
     let contentAuto = document.createElement("div");
     contentPrincipal.appendChild(contentAuto);
-    contentAuto.setAttribute("class", "contenidoIndividual")
-
-    let marcaAuto = document.createElement("label");
-    contentAuto.appendChild(marcaAuto);
-    let textMarca = document.createTextNode(auto.Marca);
-    marcaAuto.appendChild(textMarca);
-
-    let modeloAuto  =  document.createElement("label");
-    contentAuto.appendChild(modeloAuto);
-    let textModelo  =  document.createTextNode(auto.Modelo);
-    modeloAuto.appendChild(textModelo);
-
-    let precioAuto = document.createElement("label");
-    contentAuto.appendChild(precioAuto);
-    let textAuto = document.createTextNode(auto.Precio);
-    precioAuto.appendChild(textAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
 
     let imagenAuto  = document.createElement("img");
     contentAuto.appendChild(imagenAuto);
     imagenAuto.setAttribute("src", auto.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    let contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    let marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    let textMarca = document.createTextNode(auto.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    let modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    let textModelo  =  document.createTextNode(auto.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    let precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    let textAuto = document.createTextNode(auto.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+
+    //Segundo auto
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", auto2.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(auto2.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(auto2.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(auto2.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+
+    // Tercer auto
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", auto3.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(auto3.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(auto3.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(auto3.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 }
+
+//Segunda busqueda
+
 let toyota = new Automovil ("Toyota ", "Hero ", "$150.000.000", "img/toyota.jpg");
 
-function validarToyota () {
-    alert ("¡" + toyota.Marca + " " + toyota.Modelo + " " + "Es el automovil que necesitas!")
+let toyota2 = new Automovil ("Toyota ", "Prado ", "$200.000.000", "img/toyota-prado.jfif");
 
-    mostrarToyota ();
-}
+let toyota3 = new Automovil ("Toyota ", "Sumo ", "$48.000.000", "img/toyota-sumo.jpg");
 
 function mostrarToyota () {
-    let contenedorPrinToyota = document.getElementById("mainContent");
-    let contentToyota        = document.createElement("div");
-    contenedorPrinToyota.appendChild(contentToyota);
 
-    let marcaToyota = document.createElement("label");
-    contentToyota.appendChild(marcaToyota);
-    let textToyotaMarca = document.createTextNode(toyota.Marca);
-    marcaToyota.appendChild(textToyotaMarca);
+    let contentPrincipal = document.getElementById("mainContent");
+    let contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
 
-    let modeloToyota = document.createElement("label");
-    contentToyota.appendChild(modeloToyota);
-    let textModelToyota = document.createTextNode(toyota.Modelo);
-    modeloToyota.appendChild(textModelToyota);
+    let imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", toyota.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
 
-    let precioToyota = document.createElement("label");
-    contentToyota.appendChild(precioToyota);
-    let textPrecioToyota = document.createTextNode(toyota.Precio);
-    precioToyota.appendChild(textPrecioToyota);
+    let contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
 
-    let imgToyota = document.createElement("img");
-    contentToyota.appendChild(imgToyota);
-    imgToyota.setAttribute("src", toyota.Imagen)
+    let marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    let textMarca = document.createTextNode(toyota.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    let modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    let textModelo  =  document.createTextNode(toyota.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    let precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    let textAuto = document.createTextNode(toyota.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+    
+    //Segundo auto
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", toyota2.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(toyota2.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(toyota2.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(toyota2.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+
+    // Tercer auto 
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", toyota3.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(toyota3.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(toyota3.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(toyota3.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 }
- let chevrolet = new Automovil ("Chevrolet ", "Camaro ", "$300.000.000 ", "img/camaro.jpg");
- function validarChevrolet() {
-     alert ("¡" + chevrolet.Marca + " " + chevrolet.Modelo + " " + "Es el automovil que necesitas!")
 
-     mostarChevrolet();
- }
+// Tercera busqueda
+
+
+ let chevrolet = new Automovil ("Chevrolet ", "Camaro ", "$700.000.000 ", "img/camaro.jpg");
+ 
+ let chevrolet2 = new Automovil ("Chevrolet ", "Captiva ", "$250.000.000 ", "img/chevrolet-captiva.jpg");
+
+ let chevrolet3 = new Automovil ("Chevrolet ", "Traker ", "$80.000.000 ", "img/chevrolet-traker.jfif");
 
 function mostarChevrolet () {
-    let contenedorPrincChevrolet = document.getElementById("mainContent");
-    let contnedorChevrolet = document.createElement("div");
-    contenedorPrincChevrolet.appendChild(contnedorChevrolet);
 
-    let marcaChevrolet = document.createElement("label");
-    contnedorChevrolet.appendChild(marcaChevrolet);
-    let textMarcaChevrolet = document.createTextNode(chevrolet.Marca);
-    marcaChevrolet.appendChild(textMarcaChevrolet);
+    let contentPrincipal = document.getElementById("mainContent");
+    let contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
 
-    let modeloChevrolet = document.createElement("label");
-    contnedorChevrolet.appendChild(modeloChevrolet);
-    let textModeloChevrolet = document.createTextNode(chevrolet.Modelo);
-    marcaChevrolet.appendChild(textModeloChevrolet);
+    let imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", chevrolet.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
 
-    let precioChevrolet = document.createElement("label");
-    contnedorChevrolet.appendChild(precioChevrolet);
-    let textPrecioChevrolet = document.createTextNode(chevrolet.Precio);
-    precioChevrolet.appendChild(textPrecioChevrolet);
+    let contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
 
-    let imgChevrolet = document.createElement("img");
-    contnedorChevrolet.appendChild(imgChevrolet);
-    imgChevrolet.setAttribute("src", chevrolet.Imagen)
+    let marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    let textMarca = document.createTextNode(chevrolet.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    let modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    let textModelo  =  document.createTextNode(chevrolet.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    let precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    let textAuto = document.createTextNode(chevrolet.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+
+    //Segundo auto
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", chevrolet2.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(chevrolet2.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(chevrolet2.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(chevrolet2.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
+
+    // tercer auto
+
+    contentPrincipal = document.getElementById("mainContent");
+    contentAuto = document.createElement("div");
+    contentPrincipal.appendChild(contentAuto);
+    contentAuto.setAttribute("class", "contenidoIndividual");
+
+    imagenAuto  = document.createElement("img");
+    contentAuto.appendChild(imagenAuto);
+    imagenAuto.setAttribute("src", chevrolet3.Imagen);
+    imagenAuto.setAttribute("class", "imagen")
+
+    contentDescripcion = document.createElement("div");
+    contentAuto.appendChild(contentDescripcion);
+    contentDescripcion.setAttribute("class", "descripcion")
+
+    marcaAuto = document.createElement("label");
+    contentDescripcion.appendChild(marcaAuto);
+    textMarca = document.createTextNode(chevrolet3.Marca);
+    marcaAuto.appendChild(textMarca);
+
+    modeloAuto  =  document.createElement("label");
+    contentDescripcion.appendChild(modeloAuto);
+    textModelo  =  document.createTextNode(chevrolet3.Modelo);
+    modeloAuto.appendChild(textModelo);
+
+    precioAuto = document.createElement("label");
+    contentDescripcion.appendChild(precioAuto);
+    textAuto = document.createTextNode(chevrolet3.Precio);
+    precioAuto.appendChild(textAuto);
+    precioAuto.setAttribute("class", "precio")
 }
 
 window.addEventListener("keydown", function(event) {
@@ -115,23 +332,21 @@ window.addEventListener("keydown", function(event) {
             mostarChevrolet(chevrolet);
         }
         else if (busqueda == "Mazda" ) {
-            mostrarVehiculo(auto);}
+            mostrarVehiculo(auto, auto2, auto3);
+        }
         
-
         if (busqueda == "Toyota") {
-            mostrarToyota(toyota);}
+            mostrarToyota(toyota, toyota2, toyota3);}
 
         else if (busqueda == "Chevrolet") {
-            mostarChevrolet(chevrolet);
+            mostarChevrolet(chevrolet, chevrolet2, chevrolet3);
         }
             
         else {
-              this.true;
+            alert("No se han encontrado resultados que coincidan con la busqueda");
         } 
-        return this. false.alert("No se han encontrado resultados que coincidan con la busqueda"); 
     }
 })
-
 
 function limpiarVentana () {
     document.getElementById("mainContent").innerHTML = "" ;
