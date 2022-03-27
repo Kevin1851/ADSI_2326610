@@ -327,15 +327,15 @@ window.addEventListener("keydown", function(event) {
     if (event.key == "Enter") {
         limpiarVentana();
         if (busqueda == "Automoviles disponibles" ) {
-            mostrarVehiculo(auto);
-            mostrarToyota(toyota);
-            mostarChevrolet(chevrolet);
+            mostrarVehiculo(auto, auto2, auto3);
+            mostrarToyota(toyota, toyota2, toyota3);
+            mostarChevrolet(chevrolet, chevrolet2, chevrolet3);
         }
-        else if (busqueda == "Mazda" ) {
+        else if (busqueda == "Mazda") {
             mostrarVehiculo(auto, auto2, auto3);
         }
         
-        if (busqueda == "Toyota") {
+        else if (busqueda == "Toyota") {
             mostrarToyota(toyota, toyota2, toyota3);}
 
         else if (busqueda == "Chevrolet") {
