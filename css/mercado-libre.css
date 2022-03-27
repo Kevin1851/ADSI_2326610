@@ -116,3 +116,13 @@ body {
     display: block;
     font-size: 1.2em;
 }
+
+@media screen and (max-width: 600px){
+    .logoMenu {
+        margin-left: 30px;
+    }
+
+    .logoCarrito {
+        margin-right: 30px;
+    }
+}
