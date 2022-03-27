@@ -326,7 +326,7 @@ window.addEventListener("keydown", function(event) {
     let busqueda = document.getElementById("textoBusqueda").value;
     if (event.key == "Enter") {
         limpiarVentana();
-        if (busqueda == "Automoviles disponibles" ) {
+        if (busqueda == "Automóviles disponibles") {
             mostrarVehiculo(auto, auto2, auto3);
             mostrarToyota(toyota, toyota2, toyota3);
             mostarChevrolet(chevrolet, chevrolet2, chevrolet3);
@@ -334,14 +334,12 @@ window.addEventListener("keydown", function(event) {
         else if (busqueda == "Mazda") {
             mostrarVehiculo(auto, auto2, auto3);
         }
-        
         else if (busqueda == "Toyota") {
             mostrarToyota(toyota, toyota2, toyota3);}
 
         else if (busqueda == "Chevrolet") {
             mostarChevrolet(chevrolet, chevrolet2, chevrolet3);
         }
-            
         else {
             alert("No se han encontrado resultados que coincidan con la busqueda");
         } 
