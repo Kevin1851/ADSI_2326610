@@ -340,7 +340,9 @@ window.addEventListener("keydown", function(event) {
         else if (busqueda == "Chevrolet") {
             mostarChevrolet(chevrolet, chevrolet2, chevrolet3);
         }
-        else {
+        else if (busqueda == ""){
+            false
+        } else {
             alert("No se han encontrado resultados que coincidan con la busqueda");
         } 
     }

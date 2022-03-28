@@ -1,59 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina-principal</title>
-
-    <link rel="stylesheet" href="css/pagina-principal.css">
-
+    <title>Portafolio 1 Listado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/submenu.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <nav id="nav_oculto">
 
-    <div id="menu_side" class="menu__side">
-
-        <i id="btn_open" class="fas fa-bars user"></i>
-
-        <div id="titulo" class="name__page">
-            <h4><span>K</span>evin</h4>
-        </div>
-
-        <div id="option_menu" class="options__menu">	
-
-            <a href="pagina-principal.html" class="selected">
-                <div class="selected-1">
-                    <i class="fas fa-home"></i>
-                    <h4>Inicio</h4>
-                </div>
-            </a>
-
-            <a href="pagina-principal-port1.html">
-                <div class="option">
-                    <i class="far fa-file"></i>
-                    <h4>Portafolio 1</h4>
-                </div>
-            </a>
-
-            <a href="pagina-principal-port2.html">
-                <div class="option">
-                    <i class="far fa-file"></i>
-                    <h4>Portafolio 2</h4>
-                </div>
-            </a>
-
-        </div>
-
+    <div id="titulo" class="name__page">
+      <h4><span>K</span>evin</h4>
     </div>
 
-    <div id="body" class="contenido-principal">
-        <h1 class="marca_agua">
-            ADSI_2326610
-        </h1>
+    <ul class="menu">
+      <li class="submenu"><a href="pagina-principal-port1.html">Inicio</a></li>
+      <li class="submenu"><a href="javascript/indexJavascript.html">Sesión de JavaScript</a></li>
+      <li class="submenu"><a href="fuentes.html">Fuentes</a></li>
+      <li class="submenu"><a href="listas.html">Listas</a></li>
+      <li class="submenu"><a href="colores.html">Colores</a></li>
+      <li class="submenu"><a href="alineacion.html">Alineacion</a></li>
+      <li class="submenu"><a href="espacing.html">Espacing</a></li>
+      <li class="submenu"><a href="indent-blockquote.html">Indent y Blockquote</a></li>
+      <li class="submenu"><a href="margin-border-pading.html">Margins, Borders, Padding</a></li>
+      <li class="submenu"><a href="imagenes.html">Imagenes</a></li>
+      <li class="submenu"><a href="tablas.html">Tablas</a></li>
+      <li class="submenu"><a href="formulario.html">Formulario</a></li>
+      <li class="submenu"><a href="contenedores.html">Contenedores</a></li>   
+      <li class="submenu"><a href="#">Sub menú <i class="fas fa-angle-down"></i></a>
+        <ul class="submenu-nivel2">
+            <li class="subitems"><a href=#>Noticias</a></li>
+            <li class="subitems"><a href=#>Avatars</a></li>
+            <li class="subitems"><a href=#>Consolas</a></li>
+        </ul>
+      </li>
+      <li class="submenu"><a href="menu-vertical.html">Menú Vertical</a></li>
+      <li class="submenu"><a href="menu-responsive-desing.html">Menú Responsive</a></li>
+    </ul>
+  </nav>
+  <div id="contenido_principal_desplegado" class="contenido-principal">
+
+    <i id="btn_open" class="fas fa-bars user"></i>
+
+    <div id="main" class="main-content">
+      <h1>Hello word!!</h1><br>
+      <h2 class="nombre">EL MUNDO DE LOS VIDEOJUEGOS</h2><br>
+      <h2>Conoceras todo a cerca de este maravilloso mundo</h2><br>
+      <a href="https://sena.territorio.la/cms/index.php">Ir a territorium</a>
     </div>
-
-    <script src="js/pagina_principal.js"></script>
-
+  </div>
+  <script src="js/index.js"></script>
 </body>
 </html>

@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio 2</title>
-
-    <link rel="stylesheet" href="css/pagina-principal-port2.css">
-
+    <title>Sesión de Java Script</title>
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/sesion-java-script.css">
 </head>
 <body>
-
     <div id="menu_side" class="menu__side">
 
         <i id="btn_open" class="fas fa-bars user"></i>
@@ -24,7 +21,7 @@
 
             <a href="index.html">
                 <div class="option">
-                    <i class="fas fa-home"></i>
+                    <i class="fas fa-home" title="Inicio"></i>
                     <h4>Inicio</h4>
                 </div>
             </a>
@@ -36,15 +33,15 @@
                 </div>
             </a>
 
-            <a href="pagina-principal-port2.html" class="selected">
-                <div class="selected-1">
+            <a href="pagina-principal-port2.html">
+                <div class="option">
                     <i class="far fa-file"></i>
                     <h4>Portafolio 2</h4>
                 </div>
             </a>
 
-            <a href="sesion-java-script.html">
-                <div class="option">
+            <a href="sesion-java-script.html" class="selected">
+                <div class="selected-1">
                     <i class="far fa-file"></i>
                     <h4>Sesión de Java Script</h4>
                 </div>
@@ -56,28 +53,26 @@
 
     <div id="body" class="contenido-principal">
 
-        <div class="box_master">
-            
-            <a class="box_principal" href="background.html">Background 1</a>
-    
-            <a class="box_principal" href="background-2.html">Background 2</a>
+        <div class="folders">
+            <a href="javascript/index.html" id="carpeta">
+                <div>
+                    <i class="fa-solid fa-folder"></i><br>
+                    Fundamentos
+                </div>
+            </a>
+        </div>
 
-            <a class="box_principal" href="flexbox.html">Flex box</a>
-    
-            <a class="box_principal" href="login.html">Log in</a>
+        <div class="divisor"></div>
 
-            <a class="box_principal" href="calendario.html">Calendario</a>
-            
-            <a class="box_principal" href="grid_maquetacion.html">Grid maquetación</a>
+        <div id="master_box" class="box-master">
 
-            <a class="box_principal" href="grid_maquetacion_2.html">Maqueta terminada</a>
+            <a class="box-principal_2" href="carrito-compras.html">Carro de compras</a>
 
-            <a class="box_principal" href="boostrap_element.html">Elementos de Boostrap</a>
-    
+            <a class="box-principal_3" href="formulario-js.html">Formulario</a>
+
+            <a class="box-principal_4" href="mercado-libre.html">Clon de mercado libre</a>
+
         </div>
     </div>
-    
-    <script src="js/pagina_principal_port2.js"></script>
-
 </body>
 </html>
