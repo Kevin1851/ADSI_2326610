@@ -9,20 +9,39 @@
     <script src="https://kit.fontawesome.com/47910d8a72.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="logoMenu">
-            <i class="fas fa-bars"></i>
+
+    <nav id="nav_oculto">
+
+        <div id="titulo" class="name__page">
+          <h4><span>K</span>evin</h4>
         </div>
-        <div class="barraBusqueda">
-            <input id="textoBusqueda" type="text" placeholder="Busca productos, marcas y más...">
+    
+        <ul class="menu">
+          <li class="submenu"><a href="sesion-java-script.html">Inicio</a></li>
+          <li class="submenu"><a href="carrito-compras.html">Sesión de JavaScript</a></li>
+          <li class="submenu"><a href="formulario-js.html">Fuentes</a></li>
+        </ul>
+    </nav>
+
+    <div id="contenido_principal_desplegado">
+
+        <div class="header">
+            <div class="logoMenu">
+                <i id="btn_open" class="fas fa-bars"></i>
+            </div>
+            <div class="barraBusqueda">
+                <input id="textoBusqueda" type="text" placeholder="Busca productos, marcas y más...">
+            </div>
+            <div class="logoCarrito">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
         </div>
-        <div class="logoCarrito">
-            <i class="fas fa-shopping-cart"></i>
-        </div>
+        
+        <div class="mainContent" id="mainContent"></div>
+
     </div>
     
-    <div class="mainContent" id="mainContent"></div>
-    
     <script src="js/mercado-libre.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
