@@ -4,6 +4,10 @@ let horaSalida = new Date (2022, 10, 5, 9, 12,0);
 let horaLlegada = new Date (2022, 4, 29, 8, 17,0);
 let horaSalida1 = new Date (2022, 3, 5, 2, 12,0);
 let horaLlegada1 = new Date (2022, 3, 20, 3, 18,0);
+let precio = 350000;
+let precio1 = 320000;
+let formatoPrecio = new Intl.NumberFormat('es-Es').format(precio);
+let formatoPrecio1 = new Intl.NumberFormat('es-Es').format(precio1);
 
 class Vuelos{
     constructor(origen, destino, horaSalida, horaLlegada, precio, imagen){
@@ -21,7 +25,7 @@ let vuelo = [{
     "destino":"Medellín",
     "horaSalida": addCerosFecha(horaSalida.getDay().toString()) + "/" + addCerosFecha(horaSalida.getMonth().toString()) + "/" + horaSalida.getFullYear(),
     "horaLlegada": addCerosFecha(horaLlegada.getDay().toString()) + "/" + addCerosFecha(horaLlegada.getMonth().toString()) + "/" + horaLlegada.getFullYear,
-    "precio":350000,
+    "precio":formatoPrecio,
     "imagen":"img/venecia.jpg"
 },
 {
@@ -29,8 +33,16 @@ let vuelo = [{
     "destino":"Barranquilla",
     "horaSalida" : addCerosFecha(horaSalida1.getDay().toString()) + "/" + addCerosFecha(horaSalida1.getMonth().toString()) + "/" + horaSalida1.getFullYear(),
     "horaLlegada":horaLlegada1.getDay()+ "/" + horaLlegada1.getMonth + "/" + horaLlegada1.getFullYear,
-    "precio":320000,
+    "precio":formatoPrecio1,
     "imagen":"img/coliceo.png"
+},
+{
+    "origen":"Bogotá",
+    "destino":"Cartagena",
+    "horaSalida": addCerosFecha(horaSalida.getDay().toString()) + "/" + addCerosFecha(horaSalida.getMonth().toString()) + "/" + horaSalida.getFullYear(),
+    "horaLlegada": addCerosFecha(horaLlegada.getDay().toString()) + "/" + addCerosFecha(horaLlegada.getMonth().toString()) + "/" + horaLlegada.getFullYear,
+    "precio":formatoPrecio,
+    "imagen":"img/santorini.jpg"
 }];
 
 function addCerosFecha(fecha) {
@@ -45,7 +57,7 @@ function mostrarVuelos(){
     }
 }
 
-function cargarVuelos(origen, destino, horaSalida, horaLlegada, precio, imagen){
+function cargarVuelos(origen, destino, horaSalida, horaLlegada, formatoPrecio, imagen){
     let contentPrincipal = document.getElementById("articulos");
     let contentVuelo = document.createElement("div");
     contentPrincipal.appendChild(contentVuelo);
@@ -54,28 +66,30 @@ function cargarVuelos(origen, destino, horaSalida, horaLlegada, precio, imagen){
     let imagenVuelo = document.createElement("img");
     contentVuelo.appendChild(imagenVuelo);
     imagenVuelo.setAttribute("src", imagen);
-    imagenVuelo.setAttribute("class", "img_article");
+    imagenVuelo.setAttribute("class", "imagen");
+
+    let salidaVueloContent = document.createElement("div");
+    contentVuelo.appendChild(salidaVueloContent);
+    salidaVueloContent.setAttribute("class", "hora-salida");
+    let salidaHoraVuelo = document.createElement("label");
+    salidaVueloContent.appendChild(salidaHoraVuelo);
+    salidaHoraVuelo.setAttribute("class", "texto-hora-salida")
+    let textSalidaHoraVuelo = document.createTextNode("Viaja el " + horaSalida);
+    salidaHoraVuelo.appendChild(textSalidaHoraVuelo);
 
     let contentDescripcion = document.createElement("div");
     contentVuelo.appendChild(contentDescripcion);
     contentDescripcion.setAttribute("class", "descripcion");
 
-    let salidaVueloContent = document.createElement("div");
-    contentDescripcion.appendChild(salidaVueloContent);
-    salidaVueloContent.setAttribute("class", "hora-llegada");
-    let salidaHoraVuelo = document.createElement("label");
-    salidaVueloContent.appendChild(salidaHoraVuelo);
-    let textSalidaHoraVuelo = document.createTextNode("Viaja el " + horaSalida);
-    salidaHoraVuelo.appendChild(textSalidaHoraVuelo);
-
     let salidaVuelo = document.createElement("label");
     contentDescripcion.appendChild(salidaVuelo);
-    let textSalidaVuelo = document.createTextNode("Viaja desde " + origen);
+    salidaVuelo.setAttribute("class", "origen-vuelo")
+    let textSalidaVuelo = document.createTextNode("desde " + origen);
     salidaVuelo.appendChild(textSalidaVuelo);
 
     let destinoVuelo = document.createElement("label");
     contentDescripcion.appendChild(destinoVuelo);
-    let textDestinoVuelo = document.createTextNode("hacía" + destino);
+    let textDestinoVuelo = document.createTextNode("hacía " + destino);
     destinoVuelo.appendChild(textDestinoVuelo);
 
     let soloIdaVuelo = document.createElement("label");
@@ -85,11 +99,21 @@ function cargarVuelos(origen, destino, horaSalida, horaLlegada, precio, imagen){
 
     let economicoVuelo = document.createElement("label");
     contentDescripcion.appendChild(economicoVuelo);
-    let textEconomicoVuelo = document.createTextNode("Economico");
+    let textEconomicoVuelo = document.createTextNode("Economy");
     economicoVuelo.appendChild(textEconomicoVuelo);
 
     let textoDescriptivoVuelo = document.createElement("label");
     contentDescripcion.appendChild(textoDescriptivoVuelo);
     let nodoTextoDescriptivoVuelo = document.createTextNode("Precio final desde");
-    economicoVuelo.appendChild(nodoTextoDescriptivoVuelo);
+    textoDescriptivoVuelo.appendChild(nodoTextoDescriptivoVuelo);
+
+    let precioVuelo = document.createElement("label");
+    contentDescripcion.appendChild(precioVuelo);
+    let nodoPrecioVuelo = document.createTextNode("COP " + formatoPrecio);
+    precioVuelo.appendChild(nodoPrecioVuelo);
+
+    let tasasVuelo = document.createElement("label");
+    contentDescripcion.appendChild(tasasVuelo);
+    let nodoTasasVuelo = document.createTextNode("Tasas incluidas · Vuelo directo");
+    tasasVuelo.appendChild(nodoTasasVuelo);
 }
