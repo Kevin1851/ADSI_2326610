@@ -20,6 +20,10 @@ class Vuelos{
     }
 }
 
+window.onload = function(){
+    mostrarVuelos();
+}
+
 let vuelo = [{
     "origen":"Bogotá",
     "destino":"Medellín",
@@ -43,6 +47,14 @@ let vuelo = [{
     "horaLlegada": addCerosFecha(horaLlegada.getDay().toString()) + "/" + addCerosFecha(horaLlegada.getMonth().toString()) + "/" + horaLlegada.getFullYear,
     "precio":formatoPrecio,
     "imagen":"img/santorini.jpg"
+},
+{
+    "origen":"Bogotá",
+    "destino":"Bucaramanga",
+    "horaSalida" : addCerosFecha(horaSalida1.getDay().toString()) + "/" + addCerosFecha(horaSalida1.getMonth().toString()) + "/" + horaSalida1.getFullYear(),
+    "horaLlegada":horaLlegada1.getDay()+ "/" + horaLlegada1.getMonth + "/" + horaLlegada1.getFullYear,
+    "precio":formatoPrecio1,
+    "imagen":"img/londres.jpg"
 }];
 
 function addCerosFecha(fecha) {
@@ -81,39 +93,91 @@ function cargarVuelos(origen, destino, horaSalida, horaLlegada, formatoPrecio, i
     contentVuelo.appendChild(contentDescripcion);
     contentDescripcion.setAttribute("class", "descripcion");
 
+    // Contenedor de origen y llegada
+
+    let contentOrigenLLegada = document.createElement("div");
+    contentDescripcion.appendChild(contentOrigenLLegada);
+    contentOrigenLLegada.setAttribute("class", "div-origen-llegada");
+
+    //-------------------------------
+
     let salidaVuelo = document.createElement("label");
-    contentDescripcion.appendChild(salidaVuelo);
+    contentOrigenLLegada.appendChild(salidaVuelo);
     salidaVuelo.setAttribute("class", "origen-vuelo")
-    let textSalidaVuelo = document.createTextNode("desde " + origen);
+
+    let textSalidaVuelo = document.createTextNode("desde ");
     salidaVuelo.appendChild(textSalidaVuelo);
 
+    //Span dentro del label
+
+        let salidaVueloSpam = document.createElement("span");
+        salidaVuelo.appendChild(salidaVueloSpam);
+        salidaVueloSpam.setAttribute("class", "spanSalida")
+
+        let textSalidaVueloSpam = document.createTextNode(origen);
+        salidaVueloSpam.appendChild(textSalidaVueloSpam);
+
+    //---------------------------
+
     let destinoVuelo = document.createElement("label");
-    contentDescripcion.appendChild(destinoVuelo);
-    let textDestinoVuelo = document.createTextNode("hacía " + destino);
+    contentOrigenLLegada.appendChild(destinoVuelo);
+    destinoVuelo.setAttribute("class", "destino-vuelo");
+
+    let textDestinoVuelo = document.createTextNode("hacía ");
     destinoVuelo.appendChild(textDestinoVuelo);
 
+    //Span dentro del label
+
+    let destinoVueloSpam = document.createElement("span");
+    destinoVuelo.appendChild(destinoVueloSpam);
+    destinoVueloSpam.setAttribute("class", "span-llegada");
+
+    let textLlegadaVueloSpam = document.createTextNode(destino);
+    destinoVueloSpam.appendChild(textLlegadaVueloSpam);
+
+    //--------------------------------
+
+    //-----------CIERRE DE CONTENEDOR ORIGEN-LLEGADA------------------------
+
+    //-----------CONTENEDOR SOLO IDA Y ECONOMICO----------------------------
+
+    let contentIdaEconomy = document.createElement("div");
+    contentDescripcion.appendChild(contentIdaEconomy);
+    contentIdaEconomy.setAttribute("class", "div-ida-economy")
+
     let soloIdaVuelo = document.createElement("label");
-    contentDescripcion.appendChild(soloIdaVuelo);
+    contentIdaEconomy.appendChild(soloIdaVuelo);
+    soloIdaVuelo.setAttribute("class", "label-solo-ida")
     let textSoloIdaVuelo = document.createTextNode("Solo ida");
     soloIdaVuelo.appendChild(textSoloIdaVuelo);
 
     let economicoVuelo = document.createElement("label");
-    contentDescripcion.appendChild(economicoVuelo);
+    contentIdaEconomy.appendChild(economicoVuelo);
+    economicoVuelo.setAttribute("class", "label-economy")
     let textEconomicoVuelo = document.createTextNode("Economy");
     economicoVuelo.appendChild(textEconomicoVuelo);
 
+    //Termina contenedor ida y economy
+
+
     let textoDescriptivoVuelo = document.createElement("label");
     contentDescripcion.appendChild(textoDescriptivoVuelo);
+    textoDescriptivoVuelo.setAttribute("class", "label-pre-precio");
+
     let nodoTextoDescriptivoVuelo = document.createTextNode("Precio final desde");
     textoDescriptivoVuelo.appendChild(nodoTextoDescriptivoVuelo);
 
     let precioVuelo = document.createElement("label");
     contentDescripcion.appendChild(precioVuelo);
+    precioVuelo.setAttribute("class", "label-precio")
+
     let nodoPrecioVuelo = document.createTextNode("COP " + formatoPrecio);
     precioVuelo.appendChild(nodoPrecioVuelo);
 
     let tasasVuelo = document.createElement("label");
     contentDescripcion.appendChild(tasasVuelo);
+    tasasVuelo.setAttribute("class", "label-tasas-incluidas")
+
     let nodoTasasVuelo = document.createTextNode("Tasas incluidas · Vuelo directo");
     tasasVuelo.appendChild(nodoTasasVuelo);
 }

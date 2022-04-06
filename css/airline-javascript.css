@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background: #ededed;
+    background: #f8f8f8;
 }
 
 /* ----HEADER----- */
@@ -17,31 +17,32 @@ body {
 .navegacion {
     display: flex;
     justify-content: space-between;
-    grid-template: "header      nav         nav"          100px /
-                    1fr         1fr         1fr;
     width: 100%;
     background: rgb(225,225,225);
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
     background-image: url(../img/qatar_airways_logo.png);
-    background-size: 190px 60px;
+    background-size: 150px 40px;
     background-repeat: no-repeat;
     background-position-x: center;
     width: 210px;
     height: 70px;
     grid-area: header;
-    margin:9px 0 1px 50px;
+    margin: 30px 0 1px 50px;
     align-self: center;
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     display: grid;
+    cursor: pointer;
 }
 
 .nav_class {
     grid-area: nav;
     border-bottom-left-radius: 8px;
-    font-size: 1.2em;
+    font-size: 1em;
     display: grid;
     align-items: center;
     grid-template: "a     b     c     d"   100% /
@@ -53,8 +54,10 @@ nav a {
     justify-content: center;
     text-decoration: none;
     color: rgb(3,3,3);
-    padding: 27px;
+    padding: 5px;
     transition: all .2s;
+    height: 100%;
+    align-items: center;
 }
 
 nav a:hover {
@@ -104,7 +107,6 @@ a .d {
     border-radius: 15px;
     width: 350px;
     margin: auto 20px 20px 20px;
-    cursor: pointer;
     border-radius: 8px;
     max-width: 1200px;
     transition: all 300ms cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -132,11 +134,19 @@ a .d {
 .hora-salida {
     background: #ededed;
     height: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    letter-spacing: .04rem;
+    background: rgba(92,6,50,.3);
 }
 
 .texto-hora-salida {
-    margin: 25px auto auto 20px;
+    margin: auto auto auto 20px;
+    display: flex;
+    align-items: center;
     font-size: .8em;
+    height: 100%;
+    font-weight: 100;
 }
 
 .descripcion {
@@ -146,8 +156,98 @@ a .d {
     flex-direction: column;
 }
 
+/* Contenedor de origen y llegada */
+
+.div-origen-llegada {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 15px 0;
+}
+
 .origen-vuelo {
-    font-size: 1.1em;
+    font-size: .8em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
+}
+
+.spanSalida {
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 3px;
+    color: rgba(0,0,0);
+}
+
+.destino-vuelo {
+    font-size: .8em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
+}
+
+.span-llegada {
+    font-size: 1.7em;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 3px;
+    color: rgba(0,0,0);
+}
+
+/* -------------------------------- */
+
+/* Contenedor ida y economy */
+
+.div-ida-economy {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 7px;
+}
+
+.label-solo-ida{
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(92,6,50);
+    background: rgba(92,6,50,.1);
+    font-size: .8em;
+    margin: 0 8px 8px 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.label-economy{
+    color: rgba(0,0,0,0.7);
+    border-radius: 25px;
+    font-family: 'Roboto', sans-serif;
+    background: rgba(0, 0, 0, 0.05);
+    font-size: .8em;
+    margin: 0 8px 8px 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* ------------------------- */
+
+.label-pre-precio {
+    font-size: .8em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
+}
+
+.label-precio {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3em;
+    color: rgba(92,6,50);
+    font-weight: 600;
+    padding: 4px 0;
+}
+
+.label-tasas-incluidas {
+    font-size: .8em;
+    font-weight: 100;
+    font-family: 'Roboto', sans-serif;
+    color: rgba(0,0,0,0.7);
 }
 
 @media screen and (min-width: 700px) and (max-width: 1100px) {
@@ -159,7 +259,7 @@ a .d {
         width: 100%;
         clip-path: circle(0px at top  right);
         transition: clip-path ease-in-out .5s;
-        margin: 90px 0 0 0;
+        margin: 70px 0 0 0;
         background: rgba(225,225,225,.8);
         border-bottom-left-radius: 0;
     }
@@ -170,6 +270,7 @@ a .d {
 
     nav a {
         border-bottom: 1px solid rgb(92,6,50);
+        padding: 15px 0;
     }
 
     nav a:hover {
@@ -180,10 +281,6 @@ a .d {
         border-bottom: none;
     }
 
-    header {
-        margin: 10px 0 10px 15px;
-    }
-
     .icon_menu {
         display: flex;
         width: 50px;
@@ -192,10 +289,12 @@ a .d {
     
     .icon_menu i {
         width: 30px;
-        font-size: 2.5em;
-        margin-top: 30px;
+        font-size: 2.2em;
         margin-right: 15px;
         color: rgb(92,6,50);
+        display: flex;
+        height: 70px;
+        align-items: center;
     }
 
 }
@@ -208,7 +307,7 @@ a .d {
         width: 100%;
         clip-path: circle(0px at top  right);
         transition: clip-path ease-in-out .5s;
-        margin: 90px 0 0 0;
+        margin: 70px 0 0 0;
         background: rgba(225,225,225,.9);
         border-bottom-left-radius: 0;
     }
@@ -219,6 +318,7 @@ a .d {
 
     nav a {
         border-bottom: 1px solid rgb(92,6,50);
+        padding: 15px 0;
     }
 
     nav a:hover {
@@ -230,7 +330,7 @@ a .d {
     }
 
     header {
-        margin: 10px 0 10px 15px;
+        margin-left: -15px;
     }
 
     .icon_menu {
@@ -241,10 +341,12 @@ a .d {
     
     .icon_menu i {
         width: 30px;
-        font-size: 2.5em;
-        margin-top: 30px;
+        font-size: 2.2em;
         margin-right: 15px;
         color: rgb(92,6,50);
+        display: flex;
+        height: 70px;
+        align-items: center;
     }
 
 }
