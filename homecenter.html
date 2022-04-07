@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon de Homecenter</title>
+    <link rel="stylesheet" href="css/homecenter.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- MAQUETA REALIZADA CON FINES UNICAMENTE EDUCATIVOS -->
+
+    <header>
+        <div class="img-logo">
+            <img src="img/homecenter-logo.jpg" alt="Imagen del logo">
+        </div>
+        <div class="contenedor-barra-busqueda">
+            <div class="barra-busqueda">
+                <input placeholder="¿Qué estas buscando?" type="text">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="lista">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i><h2>Bogotá DC</h2>
+                </li>
+                <li>
+                    <i class="fa-solid fa-cart-shopping"></i><div class="contador-carrito">0</div>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user"></i><h2>Mi cuenta</h2>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div onclick="dezplegarCaja();" id="chat-box" class="chat-box-out">
+        <div id="header-chat-box" class="header-box-out">
+            <div>
+                <i class="fa-solid fa-bars"></i>
+                <p>Menú</p>
+            </div>
+            <div class="img-avatar">
+                <img src="img/homecenter-avatar-ana-in.png" alt="">
+            </div>
+            <div onclick="cerrarCaja();">
+                <i class="fa-solid fa-xmark"></i>
+                <p>Cerrar</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/homecenter.js"></script>
+</body>
+</html>
