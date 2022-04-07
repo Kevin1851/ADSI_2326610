@@ -138,7 +138,7 @@ li .contador-carrito {
     bottom: 0;
     box-shadow: -1px 2px 7px 0 rgb(0 0 0 / 20%);
     box-sizing: border-box;
-    height: 85%;
+    height: 90%;
     overflow: hidden;
     position: fixed;
     right: 20px;
@@ -191,6 +191,43 @@ li .contador-carrito {
     border-radius: 50%;
 }
 
+.footer {
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 20%) -1px 2px 7px 0px;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+}
+
+.footer input {
+    width: 80%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.footer input::placeholder {
+    font-style: italic;
+}
+
+.footer div {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer div img {
+    border-radius: 50%;
+    width: 70%;
+    height: 70%;
+    cursor: pointer;
+}
+
 /* -------CHAT BOX------------- */
 
 @media screen and (max-width: 800px) {
@@ -198,9 +235,6 @@ li .contador-carrito {
     header {
         height: 3.5rem;
         padding: 0 0.937rem;
-    }
-    .img-logo {
-        margin-right: 40%;
     }
 
     .img-logo-web {
@@ -272,5 +306,12 @@ li .contador-carrito {
 
     li h2 {
         display: none;
+    }
+
+
+    .chat-box-in {
+        height: 100%;
+        width: 100%;
+        right: 0;
     }
 }
