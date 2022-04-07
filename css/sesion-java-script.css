@@ -185,7 +185,7 @@ a.selected{
     margin: 0 auto 20px auto;
     gap: 20px;
     grid: 100px
-           / 1fr 1fr 1fr 1fr;
+          100px / 1fr 1fr 1fr 1fr;
 }
 
 .contenido-principal .box-master a {
