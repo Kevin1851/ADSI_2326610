@@ -21,9 +21,21 @@ header {
     align-items: center;
 }
 
+.img-logo .menu-movil {
+    display: none;
+}
+
+.img-logo-movil {
+    display: none;
+}
+
 .contenedor-barra-busqueda {
     display: flex;
     align-items: center;
+}
+
+.contenedor-barra-busqueda i {
+    display: none;
 }
 
 .barra-busqueda {
@@ -61,7 +73,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 400px;
+    width: auto;
     height: 40px;
 }
 
@@ -95,8 +107,8 @@ li .contador-carrito {
     background: rgb(216, 0, 0);
     color: white;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -134,8 +146,12 @@ li .contador-carrito {
     transition: width ease-in-out .5s, height ease-in-out .5s;
 }
 
-.header-box-out {
+.all-content-out {
     display: none;
+}
+
+.all-content-in {
+    display: block;
 }
 
 .header-box-in {
@@ -176,3 +192,85 @@ li .contador-carrito {
 }
 
 /* -------CHAT BOX------------- */
+
+@media screen and (max-width: 800px) {
+
+    header {
+        height: 3.5rem;
+        padding: 0 0.937rem;
+    }
+    .img-logo {
+        margin-right: 40%;
+    }
+
+    .img-logo-web {
+        display: none;
+    }
+
+    .img-logo .menu-movil {
+        display: flex;
+        align-items: center;
+        font-size: 1.7em;
+        padding: 4px 8px;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+
+    .menu-movil:hover {
+        background: rgba(0,0,0,.1);
+    }
+
+    .img-logo-movil {
+        display: flex;
+        align-items: center;
+        width: 43px;
+        height: 25px;
+        padding: 1px 6px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .contenedor-barra-busqueda {
+        width: 40px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor-barra-busqueda i {
+        display: flex;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 3ms;
+        border-radius: 20px;
+    }
+
+    .contenedor-barra-busqueda .fa-xmark {
+        display: none;
+    }
+
+    .contenedor-barra-busqueda i:hover {
+        background: rgba(0,0,0,.1);
+    }
+
+    .contenedor-barra-busqueda i:active {
+        background: rgba(0,0,0,.2);
+    }
+
+    .barra-busqueda {
+        display: none;
+    }
+
+    li {
+        margin-right: 10px;
+    }
+
+    li i {
+        font-size: 1.3em;
+    }
+
+    li h2 {
+        display: none;
+    }
+}

@@ -12,42 +12,57 @@
     <!-- MAQUETA REALIZADA CON FINES UNICAMENTE EDUCATIVOS -->
 
     <header>
+        
         <div class="img-logo">
-            <img src="img/homecenter-logo.jpg" alt="Imagen del logo">
+            <img class="img-logo-web" src="img/homecenter-logo.jpg" alt="Imagen del logo">
+
+            <i class="fa-solid fa-bars menu-movil"></i>
+
+            <img class="img-logo-movil" src="img/homecenter-casa.jpg" alt="Imagen del logo en movil">
         </div>
         <div class="contenedor-barra-busqueda">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
             <div class="barra-busqueda">
-                <input placeholder="¿Qué estas buscando?" type="text">
+                <input placeholder="¿Qué estás buscando?" type="text">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </div>
+
+            <i class="fa-solid fa-xmark"></i>
         </div>
         <div class="lista">
             <ul>
                 <li>
-                    <i class="fa-solid fa-location-dot"></i><h2>Bogotá DC</h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h2>Bogotá DC</h2>
                 </li>
                 <li>
-                    <i class="fa-solid fa-cart-shopping"></i><div class="contador-carrito">0</div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="contador-carrito">0</div>
                 </li>
                 <li>
-                    <i class="fa-solid fa-user"></i><h2>Mi cuenta</h2>
+                    <i class="fa-solid fa-user"></i>
+                    <h2>Mi cuenta</h2>
                 </li>
             </ul>
         </div>
     </header>
 
     <div onclick="dezplegarCaja();" id="chat-box" class="chat-box-out">
-        <div id="header-chat-box" class="header-box-out">
-            <div>
-                <i class="fa-solid fa-bars"></i>
-                <p>Menú</p>
-            </div>
-            <div class="img-avatar">
-                <img src="img/homecenter-avatar-ana-in.png" alt="">
-            </div>
-            <div onclick="cerrarCaja();">
-                <i class="fa-solid fa-xmark"></i>
-                <p>Cerrar</p>
+        <div id="all-content" class="all-content-out">
+            <div class="header-box-in">
+                <div>
+                    <i class="fa-solid fa-bars"></i>
+                    <p>Menú</p>
+                </div>
+                <div class="img-avatar">
+                    <img src="img/homecenter-avatar-ana-in.png" alt="">
+                </div>
+                <div onclick="cerrarCaja();">
+                    <i class="fa-solid fa-xmark"></i>
+                    <p>Cerrar</p>
+                </div>
             </div>
         </div>
     </div>

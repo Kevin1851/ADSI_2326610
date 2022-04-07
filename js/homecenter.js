@@ -7,11 +7,12 @@ function dezplegarCaja(){
     let chatBoxOut = document.getElementById("chat-box");
         chatBoxOut.classList.remove("chat-box-out");
 
-    let headerChatBox = document.getElementById("header-chat-box");
-    headerChatBox.classList.add("header-box-in");
+    let headerChatBox = document.getElementById("all-content");
+        headerChatBox.classList.add("all-content-in");
 };
 
 function cerrarCaja(){
     
-    document.getElementById("chat-box").classList.toggle("chat-box-in");
+    document.getElementById("chat-box").classList.remove("chat-box-in");
+    document.getElementById("chat-box").classList.add("chat-box-out");
 };
