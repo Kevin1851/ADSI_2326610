@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.contenedor-barra-busqueda-movil-out {
+    display: none;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -114,9 +118,17 @@ li .contador-carrito {
     justify-content: center;
 }
 
+.principal {
+    width: 100vmax;
+}
+
+.movil {
+    display: none;
+}
+
 /* -------CHAT BOX------------- */
 
-.chat-box-out {
+.chat-box-disable-out {
     background-image: url(../img/homecenter-avatar-ana.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -133,6 +145,22 @@ li .contador-carrito {
     opacity: 1;
 }
 
+.chat-box-disable-in {
+    display: none;
+}
+
+.chat-box-out {
+    height: 1px;
+    overflow: hidden;
+    width: 1px;
+    bottom: 1px;
+    cursor: pointer;
+    position: fixed;
+    right: 1px;
+    opacity: 1;
+    transition: width cubic-bezier(0.175, 0.885, 0.320, 1.275) .5s, height cubic-bezier(0.175, 0.885, 0.320, 1.275) .5s;
+}
+
 .chat-box-in {
     background-color: #f4f3f3;
     bottom: 0;
@@ -143,11 +171,7 @@ li .contador-carrito {
     position: fixed;
     right: 20px;
     width: 375px;
-    transition: width ease-in-out .5s, height ease-in-out .5s;
-}
-
-.all-content-out {
-    display: none;
+    transition: width cubic-bezier(0.175, 0.885, 0.320, 1.275) .5s, height cubic-bezier(0.175, 0.885, 0.320, 1.275) .5s;
 }
 
 .all-content-in {
@@ -232,6 +256,48 @@ li .contador-carrito {
 
 @media screen and (max-width: 800px) {
 
+    .contenedor-barra-busqueda-movil {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 3.5rem;
+        font-family: 'Open Sans', sans-serif;
+        border-bottom: 0.1px solid rgba(0,0,0,.1);
+        padding: 0 4%;
+        transition: width ease-in-out .5s, height ease-in-out .5s;
+    }
+
+    .barra-busqueda-movil {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .barra-busqueda-movil i {
+        font-size: 1.2em;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .barra-busqueda-movil input{
+        outline:none;
+        border: none;
+        border-radius: 5px;
+        width: 100%;
+        padding-left: 25px;
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+    .contenedor-barra-busqueda-movil-out {
+        display: block;
+        margin: auto;
+        width: 1px;
+        height: 1px;
+        opacity: 0;
+    }
+
     header {
         height: 3.5rem;
         padding: 0 0.937rem;
@@ -265,7 +331,7 @@ li .contador-carrito {
     }
 
     .contenedor-barra-busqueda {
-        width: 40px;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -278,10 +344,6 @@ li .contador-carrito {
         cursor: pointer;
         transition: all 3ms;
         border-radius: 20px;
-    }
-
-    .contenedor-barra-busqueda .fa-xmark {
-        display: none;
     }
 
     .contenedor-barra-busqueda i:hover {
@@ -307,11 +369,20 @@ li .contador-carrito {
     li h2 {
         display: none;
     }
+    
+    .principal {
+        display: none;
+    }
 
+    .movil {
+        display: block;
+        width: 100%;
+    }
 
     .chat-box-in {
         height: 100%;
         width: 100%;
         right: 0;
+        transition: width ease-in-out .5s, height ease-in-out .5s;
     }
 }
