@@ -75,13 +75,14 @@ nav::-webkit-scrollbar-thumb {
 }
 
 nav .menu .submenu {
-    padding: 15px 0 15px 25px;
+    padding: 13px 0 13px 25px;
     border-bottom: 1px solid rgba(245,245,245,.1);
     display: flex;
     flex-direction: column;
     justify-items: center;
     font-family: 'Open Sans', sans-serif;
     cursor: pointer;
+    font-size: .9em;
 }
 
 nav .menu .submenu:hover {
@@ -101,7 +102,10 @@ nav .menu .submenu a {
 
 .main-content {
     margin-left: 10px;
-    margin-top: 20px;
+}
+
+.main-content i {
+    color: rgb(245,245,245);
 }
 
 @media screen and (max-width: 700px) {
